@@ -16,7 +16,7 @@
 
 * [python面试题及答案](#python面试题及答案)
    * [python语言特性](#python语言特性)
-      * [1 Python的函数参数传递](#1-Python的函数参数传递)
+       * [1 Python的函数参数传递](#1-Python的函数参数传递)
       * [2 Python中的元类(metaclass)](#2-Python中的元类(metaclass))
       * [3 @staticmethod和@classmethod](#3-@staticmethod和@classmethod)
       * [4 类变量和实例变量](#4-类变量和实例变量)
