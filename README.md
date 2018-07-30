@@ -76,7 +76,7 @@
   * [数据库](#数据库)
   * [网络](#网络)
   * [数据结构](#数据结构)
-  * [PythonWeb相关](#PythonWeb相关)
+  * [Python Web相关](#PythonWeb相关)
   * [爬虫](#爬虫)
 * [java面试题及答案](#java面试题及答案)
 * [前端面试题及答案](#前端面试题及答案)
@@ -2218,7 +2218,7 @@ while root:
     print root.data
     root = root.next
 
-### PythonWeb相关
+### Python Web相关
 #### 解释一下 WSGI 和 FastCGI 的关系？
 CGI全称是“公共网关接口”(CommonGateway Interface)，HTTP服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序须运行在网络服务器上。　CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。
 
