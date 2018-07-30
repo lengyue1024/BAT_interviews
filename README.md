@@ -20,12 +20,12 @@
       * [2 Python中的元类(metaclass)](#2-Python中的元类(metaclass))
       * [3 @staticmethod和@classmethod](#3-@staticmethod和@classmethod)
       * [4 类变量和实例变量](#4-类变量和实例变量)
-      * [5 Python自省](#5 Python自省)
-      * [6 字典推导式](#6 字典推导式)
-      * [7 Python中单下划线和双下划线](#7 Python中单下划线和双下划线)
-      * [8 字符串格式化:%和.format](#8 字符串格式化:%和.format)
+      * [5 Python自省](#5-Python自省)
+      * [6 字典推导式](#6-典推导式)
+      * [7 Python中单下划线和双下划线](#7-Python中单下划线和双下划线)
+      * [8 字符串格式化:%和.format](#8-字符串格式化:%和.format)
       * [9 迭代器和生成器](#9 迭代器和生成器)
-      * [10 * args and ** kwargs](#10 * args and ** kwargs)
+      * [10 *args and **kwargs](#10 *args and **kwargs)
       * [11 面向切面编程AOP和装饰器](#11 面向切面编程AOP和装饰器)
       * [12 鸭子类型](#12 鸭子类型)
       * [13 Python中重载](#13 Python中重载)
@@ -887,7 +887,6 @@ A、B、数据在进入到Spark-streaming 中进行过滤，把符合要求的�
 
 ### Python语言特性
 #### 1 Python的函数参数传递
-
 看两个如下例子，分析运行结果:
 代码一：
 
