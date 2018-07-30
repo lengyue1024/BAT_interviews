@@ -16,7 +16,7 @@
 
 * [python面试题及答案](#python面试题及答案)
    * [python语言特性](#python语言特性)
-       * [1 Python的函数参数传递](#1-Python的函数参数传递)
+      * [1 Python的函数参数传递](#1-Python的函数参数传递)
       * [2 Python中的元类(metaclass)](#2-Python中的元类(metaclass))
       * [3 @staticmethod和@classmethod](#3-@staticmethod和@classmethod)
       * [4 类变量和实例变量](#4-类变量和实例变量)
@@ -887,6 +887,7 @@ A、B、数据在进入到Spark-streaming 中进行过滤，把符合要求的�
 
 ### Python语言特性
 #### 1 Python的函数参数传递
+
 看两个如下例子，分析运行结果:
 代码一：
 
