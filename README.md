@@ -2219,7 +2219,6 @@ while root:
     root = root.next
 
 ### PythonWeb相关
-
 #### 解释一下 WSGI 和 FastCGI 的关系？
 CGI全称是“公共网关接口”(CommonGateway Interface)，HTTP服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序须运行在网络服务器上。　CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。
 
