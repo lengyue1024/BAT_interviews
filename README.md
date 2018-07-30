@@ -1,5 +1,11 @@
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
 **2018-BAT_interviews**
 分享2018年最新BAT面试题
+
+   * [Python语言特性](#python语言特性)
+   - [Python数据结构与算法](#python数据结构与算法)
 ## 一些实用php面试题及答案
 
 做为程序员，到IT企业面试的时候肯定会有笔试这关，那就要考考你的PHP知识了，所以本站收集一些实用的php面试题及答案给大家。
