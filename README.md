@@ -10,6 +10,8 @@
 
    * [3 编程题](#3-编程题)
 
+   * [4 填空题](#4-填空题)
+
 * [大数据面试题及答案](#大数据面试题及答案)
 
 * [python面试题及答案](#python面试题及答案)
@@ -325,12 +327,14 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
 答: __construct , __destruct
 ````
 47、完成以下:
+
    (一)创建新闻发布系统，表名为message有如下字段 (3分)
 　　id 文章id
 　　title 文章标题
 　　content 文章内容
 　　category_id 文章分类id
     hits 点击量
+
 ```    
 答:CREATE TABLE 'message'(
    'id' int(10) NOT NULL auto_increment,
@@ -341,6 +345,7 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
    PRIMARY KEY('id');
    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```   
+
     (二)同样上述新闻发布系统：表comment记录用户回复内容，字段如下 (4分)
 　　comment_id 回复id
 　　id 文章id，关联message表中的id
@@ -348,16 +353,19 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
 　　现通过查询数据库需要得到以下格式的文章标题列表,并按照回复数量排序，回复最高的排在最前面
 　　文章id 文章标题 点击量 回复数量
 　　用一个SQL语句完成上述查询，如果文章没有回复则回复数量显示为0
+
 ```
 答:SELECT message.id id,message.title title,IF(message.`hits` IS NULL,0,message.`hits`) hits,
    IF(comment.`id` is NULL,0,count(*)) number FROM message LEFT JOIN  
    comment ON message.id=comment.id GROUP BY message.`id`;
 ```   
+
 　　(三)上述内容管理系统，表category保存分类信息，字段如下 (3分)
 　　category_id int(4) not null auto_increment;
 　　categroy_name varchar(40) not null;
 　　用户输入文章时，通过选择下拉菜单选定文章分类
 　　写出如何实现这个下拉菜单
+
 ```
 答:function categoryList()
 {
@@ -371,9 +379,11 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
     print("</select>");
 }
 ```
+
 ### 编程题
-1. 写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名
+#### 1. 写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名
    例如: http://www.sina.com.cn/abc/de/fg.php?id=1 需要取出 php 或 .php
+```   
 答案1:
    function getExt($url){
    $arr = parse_url($url);
@@ -393,8 +403,8 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
       return substr($url,$pos1);
     }
 }
-
-2. 在 HTML 语言中，页面头部的 meta 标记可以用来输出文件的编码格式，以下是一个标准的 meta 语句
+```
+#### 2. 在 HTML 语言中，页面头部的 meta 标记可以用来输出文件的编码格式，以下是一个标准的 meta 语句
 　　请使用 PHP 语言写一个函数，把一个标准 HTML 页面中的类似 meta 标记中的 charset 部分值改为 big5
 　　请注意:
 　　1. 需要处理完整的 html 页面，即不光此 meta 语句
@@ -402,7 +412,7 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
     3. ' 和 " 在此处是可以互换的
     4. 'Content-Type' 两侧的引号是可以忽略的，但 'text/html; charset=gbk' 两侧的不行
 　　5. 注意处理多余空格
-3. 写一个函数，算出两个文件的相对路径
+#### 3. 写一个函数，算出两个文件的相对路径
 　　如 $a = '/a/b/c/d/e.php';
 　　$b = '/a/b/12/34/c.php';
 　　计算出 $b 相对于 $a 的相对路径应该是 ../../c/d将()添上
@@ -423,7 +433,8 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
     return implode('/', $returnPath);    
    }    
    echo getRelativePath($a, $b);   
-填空题:
+
+### 4 填空题
 1.在PHP中，当前脚本的名称(不包括路径和查询字符串)记录在预定义变量__$_SERVER['PHP_SELF']__中;而链接到当前页面的URL记录在预定义变量__$_SERVER['HTTP_REFERER']__
 中
 2.执行程序段<?php echo 8%(-2) ?>将输出__0__。
@@ -460,6 +471,7 @@ function my_scandir($dir)
      }
 }
 14.简述论坛中无限分类的实现原理。
+```
 答:
 <?php
 /*
@@ -639,7 +651,7 @@ $ttt=  $c->getFlush($id,'0','3');
 echo $ttt;
 echo "</select>";
 ?>
-
+```
 
 ## 大数据面试题及答案
 1、kafka的message包括哪些信息
