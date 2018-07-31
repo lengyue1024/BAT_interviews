@@ -141,12 +141,13 @@
       * [](#)
 
   * [Python Web相关](#python-web相关)
-      * [1 解释一下 WSGI 和 FastCGI 的关系？](#1-解释一下 WSGI 和 FastCGI 的关系？)
-      * [2 解释一下 Django 和 Tornado 的关系、差别](#2-解释一下 Django 和 Tornado 的关系、差别)
+      * [1 解释一下 WSGI 和 FastCGI 的关系？](#1-解释一下-WSGI-和-FastCGI-的关系)
+      * [2 解释一下 Django 和 Tornado 的关系、差别](#2-解释一下-Django-和-Tornado-的关系差别)
       * [3 解释下django-debug-toolbar的使用](#解3-释下django-debug-toolbar的使用)
       * [4 解释下Django使用redis缓存服务器](#4-Django单元测试)
-      * [5 解释下Http协议](#5-解释下Http协议)
-      * [6 解释下Http请求头和常见响应状态码](#6-解释下Http请求头和常见响应状态码)
+      * [5 如何进行Django单元测试](#5-如何进行Django单元测试)
+      * [6 解释下Http协议](#6-解释下Http协议)
+      * [7 解释下Http请求头和常见响应状态码](#7-解释下Http请求头和常见响应状态码)
 
   * [爬虫](#爬虫)
       * [](#)
@@ -154,14 +155,9 @@
       * [](#)
       * [](#)
 * [java面试题及答案](#java面试题及答案)
-      * [](#)
-      * [](#)
-      * [](#)
+
 * [前端面试题及答案](#前端面试题及答案)
-      * [](#)
-      * [](#)
-      * [](#)
-      * [](#)
+
 ## PHP面试题及答案
 做为程序员，到IT企业面试的时候肯定会有笔试这关，那就要考考你的PHP知识了，所以本站收集一些实用的php面试题及答案给大家。
 ### 1 基础题
@@ -2508,7 +2504,7 @@ class Anagram:
 >  可参考: [动态规划(DP)的整理-Python描述](http://blog.csdn.net/mrlevo520/article/details/75676160)
 
 ### Python Web相关
-#### 解释一下 WSGI 和 FastCGI 的关系？
+#### 1 解释一下 WSGI 和 FastCGI 的关系？
 CGI全称是“公共网关接口”(CommonGateway Interface)，HTTP服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序须运行在网络服务器上。　CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。
 
 FastCGI像是一个常驻(long-live)型的CGI，它可以一直执行着，只要激活后，不会每次都要花费时间去fork一次(这是CGI最为人诟病的fork-and-execute模式)。它还支持分布式的运算, 即 FastCGI 程序可以在网站服务器以外的主机上执行并且接受来自其它网站服务器来的请求。
@@ -2521,7 +2517,7 @@ Flup就是使用 Python 语言对 WSGI 的一种实现，是可以用于 Python 
 Spawn-fcgi是一个小程序，这个程序的作用是管理fast-cgi进程，那么管理wsgi进程也是没有问题的，功能和php-fpm类似。
 故，简单地说，WSGI和FastCGI都是一种CGI，用于连接WEB服务器与应用程序，而WSGI专指Python应用程序。而flup是WSGI的一种实现，Spawn-fcgi是用于管理flup进程的一个工具，可以启动多个wsgi进程，并管理它们。
 
-#### 解释一下 Django 和 Tornado 的关系、差别
+#### 2 解释一下 Django 和 Tornado 的关系、差别
 Django源自一个在线新闻 Web站点，于 2005 年以开源的形式被释放出来。
 Django 框架的核心组件有：
 用于创建模型的对象关系映射为最终用户设计的完美管理界面一流的 URL 设计设计者友好的模板语言缓存系统等等
@@ -2529,11 +2525,12 @@ Django 框架的核心组件有：
 1.4，于2012年03月23日发布.Django的主要目的是简便、快速的开发数据库驱动的网站。它强调代码复用,多个组件可以很方便的以“插件”形式服务于整个框架，Django有许多功能强大的第三方插件，你甚至可以很方便的开发出自己的工具包。这使得Django具有很强的可扩展性。它还强调快速开发和DRY(Do Not RepeatYourself)原则。
 Tornado是 FriendFeed使用的可扩展的非阻塞式 web 服务器及其相关工具的开源版本。这个 Web 框架看起来有些像 web.py 或者 Google 的 webapp，不过为了能有效利用非阻塞式服务器环境，这个 Web 框架还包含了一些相关的有用工具和优化。
 Tornado 和现在的主流 Web 服务器框架（包括大多数Python 的框架）有着明显的区别：它是非阻塞式服务器，而且速度相当快。得利于其 非阻塞的方式和对epoll的运用，Tornado 每秒可以处理数以千计的连接，这意味着对于实时 Web服务来说，Tornado 是一个理想的 Web 框架。我们开发这个 Web 服务器的主要目的就是为了处理 FriendFeed 的实时功能 ——在 FriendFeed 的应用里每一个活动用户都会保持着一个服务器连接。（关于如何扩容 服务器，以处理数以千计的客户端的连接的问题。
-#### 解释下django-debug-toolbar的使用
+#### 3 解释下django-debug-toolbar的使用
 使用django开发站点时，可以使用django-debug-toolbar来进行调试。在settings.py中添加’debug_toolbar.middleware.DebugToolbarMiddleware’到项目的MIDDLEWARE_CLASSES 内。
-#### 解释下Django使用redis缓存服务器
+#### 4 解释下Django使用redis缓存服务器
 为了能在Django中使用redis，还需要安装redis for Django的插件。然后在Django的settings中配置了。现在连接和配置都已经完成了，接下来是一个简单的例子：
-	from django.conf import settings
+``` python
+from django.conf import settings
 from django.core.cache import cache
 #read cache user id
 def read_from_cache(self, user_name):
@@ -2548,11 +2545,11 @@ def read_from_cache(self, user_name):
 def write_to_cache(self, user_name):
     key = 'user_id_of_'+user_name
     cache.set(key, json.dumps(user_name), settings.NEVER_REDIS_TIMEOUT)
-
-#### 如何进行Django单元测试
-#### Django的单元测试使用python的unittest模块，这个模块使用基于类的方法来定义测试。类名为django.test.TestCase,继承于python的unittest.TestCase。
-
-	from django.test import TestCase
+```
+#### 5 如何进行Django单元测试
+ Django的单元测试使用python的unittest模块，这个模块使用基于类的方法来定义测试。类名为django.test.TestCase,继承于python的unittest.TestCase。
+``` python
+from django.test import TestCase
 from myapp.models import Animal
 
 class AnimalTestCase(TestCase):
@@ -2566,31 +2563,40 @@ class AnimalTestCase(TestCase):
         cat = Animal.objects.get(name="cat")
         self.assertEqual(lion.speak(), 'The lion says "roar"')
         self.assertEqual(cat.speak(), 'The cat says "meow"')
+```
 执行目录下所有的测试(所有的test*.py文件)：运行测试的时候，测试程序会在所有以test开头的文件中查找所有的test cases(inittest.TestCase的子类),自动建立测试集然后运行测试。
-1	$ python manage.py test
-
+``` bash
+$ python manage.py test
+```
 执行animals项目下tests包里的测试：
-	$ python manage.py testanimals.tests
-
+``` bash
+$ python manage.py testanimals.tests
+```
 执行animals项目里的test测试：
-1	$ python manage.py testanimals
-
+``` bash
+$ python manage.py testanimals
+```
 单独执行某个test case：
-1	$ python manage.py testanimals.tests.AnimalTestCase
-
+```
+$ python manage.py testanimals.tests.AnimalTestCase
+```
 单独执行某个测试方法：
-1	$ python manage.py testanimals.tests.AnimalTestCase.test_animals_can_speak
-
+```
+$ python manage.py testanimals.tests.AnimalTestCase.test_animals_can_speak
+```
 为测试文件提供路径：
-1	$ python manage.py testanimals/
-
+```
+$ python manage.py testanimals/
+```
 通配测试文件名：
-1	$ python manage.py test--pattern="tests_*.py"
-
+```
+$ python manage.py test--pattern="tests_*.py"
+```
 启用warnings提醒：
-1	$ python -Wall manage.py test
-
-#### 解释下Http协议
+```
+$ python -Wall manage.py test
+```
+#### 6 解释下Http协议
 HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。
 HTTP协议的主要特点可概括如下：
 1.支持客户/服务器模式。
@@ -2598,7 +2604,7 @@ HTTP协议的主要特点可概括如下：
 3.灵活：HTTP允许传输任意类型的数据对象。正在传输的类型由Content-Type加以标记。
 4.无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。
 5.无状态：HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。
-#### 解释下Http请求头和常见响应状态码
+#### 7 解释下Http请求头和常见响应状态码
 Accept:指浏览器或其他客户可以接爱的MIME文件格式。可以根据它判断并返回适当的文件格式。
 Accept-Charset：指出浏览器可以接受的字符编码。英文浏览器的默认值是ISO-8859-1.
 Accept-Language：指出浏览器可以接受的语言种类，如en或en-us，指英语。
@@ -3370,7 +3376,7 @@ e. 浏览器解析html代码，并请求html代码中的资源
 
 f. 浏览器对页面进行渲染呈现给用户
 
-80、对前端工程师这个职位你是怎么样理解的？
+### 80、对前端工程师这个职位你是怎么样理解的？
 
 a. 前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好
 
