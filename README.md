@@ -200,7 +200,7 @@
       * [16 在某系统中一个整数占用两个八位字节，使用Python按下面的要求编写完整程序。](#16-在某系统中一个整数占用两个八位字节使用Python按下面的要求编写完整程序)
 
 
-**java面试题及答案**
+# java面试题及答案
   * [1 面向对象的特征有哪些方面?](#1-面向对象的特征有哪些方面)
   * [2 访问修饰符public,private,protected,以及不写（默认）时的区别？](#2-访问修饰符publicprivateprotected以及不写默认时的区别)
   * [3 String 是最基本的数据类型吗?](#3-string-是最基本的数据类型吗)
@@ -252,7 +252,7 @@
   * [49 列出一些你常见的运行时异常？](#49-列出一些你常见的运行时异常)
   * [50 final, finally, finalize 的区别?](#50-final-finally-finalize-的区别)
 
-**前端面试题及答案**
+# 前端面试题及答案
   * [1 Doctype作用? 严格模式与混杂模式如何区分？它们有何意义？](#1-doctype作用-严格模式与混杂模式如何区分它们有何意义)
   * [2 行内元素有哪些？块级元素有哪些？](#2-行内元素有哪些块级元素有哪些)
   * [3 link 和@import 的区别是？](#3-link-和import-的区别是)
@@ -756,24 +756,25 @@ $testnum = "123";
    echo getRelativePath($a, $b);   
 
 ### 4 填空题
-1.在PHP中，当前脚本的名称(不包括路径和查询字符串)记录在预定义变量__$_SERVER['PHP_SELF']__中;而链接到当前页面的URL记录在预定义变量__$_SERVER['HTTP_REFERER']__
+#### 1 在PHP中，当前脚本的名称(不包括路径和查询字符串)记录在预定义变量__$_SERVER['PHP_SELF']__中;而链接到当前页面的URL记录在预定义变量__$_SERVER['HTTP_REFERER']__
 中
-2.执行程序段<?php echo 8%(-2) ?>将输出__0__。
-3.在HTTP 1.0中，状态码 401 的含义是____;如果返回“找不到文件”的提示，则可用 header 函数，其语句为____。
-4.数组函数 arsort 的作用是__对数组进行逆向排序并保持索引关系__;语句 error_reporting(2047)的作用是__报告所有错误和警告__。
-5.PEAR中的数据库连接字符串格式是____。
-6.写出一个正则表达式，过虑网页上的所有JS/VBS脚本(即把scrīpt标记及其内容都去掉):preg_replace("/<script[^>].*?>.*?</script>/si", "newinfo", $script);
-7.以Apache模块的方式安装PHP，在文件http.conf中首先要用语句____动态装载PHP模块，然后再用语句____使得Apache把所有扩展名为php的文件都作为PHP脚本处理。
+#### 2 执行程序段<?php echo 8%(-2) ?>将输出__0__。
+#### 3 在HTTP 1.0中，状态码 401 的含义是____;如果返回“找不到文件”的提示，则可用 header 函数，其语句为____。
+#### 4 数组函数 arsort 的作用是__对数组进行逆向排序并保持索引关系__;语句 error_reporting(2047)的作用是__报告所有错误和警告__。
+#### 5 PEAR中的数据库连接字符串格式是____。
+#### 6 写出一个正则表达式，过虑网页上的所有JS/VBS脚本(即把scrīpt标记及其内容都去掉):preg_replace("/<script[^>].*?>.*?</script>/si", "newinfo", $script);
+#### 7 以Apache模块的方式安装PHP，在文件http.conf中首先要用语句____动态装载PHP模块，然后再用语句____使得Apache把所有扩展名为php的文件都作为PHP脚本处理。
   LoadModule php5_module "c:/php/php5apache2.dll" , AddType application/x-httpd-php .php,
-8.语句 include 和 require 都能把另外一个文件包含到当前文件中，它们的区别是____;为了避免多次包含同一文件，可以用语句__require_once||include_once__来代替它们。
-9.类的属性可以序列化后保存到 session 中，从而以后可以恢复整个类，这要用到的函数是____。
-10.一个函数的参数不能是对变量的引用，除非在php.ini中把__allow_call_time_pass_reference boolean__设为on.
-11.SQL中LEFT JOIN的含义是__自然左外链接__。如果 tbl_user记录了学生的姓名(name)和学号(ID)，tbl_score记录了学生(有的学生考试以后被开除了，没有其记录)的学号(ID)
+#### 8 语句 include 和 require 都能把另外一个文件包含到当前文件中，它们的区别是____;为了避免多次包含同一文件，可以用语句__require_once||include_once__来代替它们。
+#### 9 类的属性可以序列化后保存到 session 中，从而以后可以恢复整个类，这要用到的函数是____。
+#### 10 一个函数的参数不能是对变量的引用，除非在php.ini中把__allow_call_time_pass_reference boolean__设为on.
+#### 11 SQL中LEFT JOIN的含义是__自然左外链接__。如果 tbl_user记录了学生的姓名(name)和学号(ID)，tbl_score记录了学生(有的学生考试以后被开除了，没有其记录)的学号(ID)
 和考试成绩(score)以及考试科目(subject)，要想打印出各个学生姓名及对应的的各科总成绩，则可以用SQL语句____。
-12.在PHP中，heredoc是一种特殊的字符串，它的结束标志必须____。
+#### 12 在PHP中，heredoc是一种特殊的字符串，它的结束标志必须____。
 编程题:
-13.写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。
+#### 13 写一个函数，能够遍历一个文件夹下的所有文件和子文件夹。
 答:
+```php
 function my_scandir($dir)
 {
      $files = array();
@@ -791,9 +792,10 @@ function my_scandir($dir)
          return $files;
      }
 }
-14.简述论坛中无限分类的实现原理。
 ```
+#### 14.简述论坛中无限分类的实现原理。
 答:
+```php
 <?php
 /*
 数据表结构如下:
