@@ -192,7 +192,7 @@
   * [13 数组有没有length()方法?String 有没有length()方法](#13-数组有没有length方法string-有没有length方法)
   * [14 在Java 中，如何跳出当前的多重嵌套循环？](#14-在java-中如何跳出当前的多重嵌套循环)
   * [15 构造器（constructor）是否可被重写（override）?](#15-构造器constructor是否可被重写override)
-  * [16 两个对象值相同(x.equals(y) == true)，但却可有不同的hash code，这句话对不对？](#16-两个对象值相同xequalsy--true但却可有不同的has-code这句话对不对)
+  * [16 两个对象值相同(x.equals(y) == true)，但却可有不同的hash code，这句话对不对？](#16-两个对象值相同xequalsy-true但却可有不同的has-code这句话对不对)
   * [17 是否可以继承String 类?](#17-是否可以继承string-类)
   * [18 当一个对象被当作参数传递到一个方法后，此方法可改变这个对象的属性，并可返回变化后的结果，那么这里到底是值传递还是引用传递?](#18-当一个对象被当作参数传递到一个方法后此方法可改变这个对象的属性并可返回变化后的结果那么这里到底是值传递还是引用传递)
   * [19 String 和StringBuilder、StringBuffer 的区别?](#19-string-和stringbuilderstringbuffer-的区别)
