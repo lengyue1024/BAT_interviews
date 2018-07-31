@@ -96,8 +96,11 @@
       * [46 Python和多线程（multi-threading）。这是个好主意吗？列举一些让Python代码以并行方式运行的方法。](#46-python和多线程multi-threading这是个好主意吗列举一些让python代码以并行方式运行的方法)
       * [47 将下面的函数按照执行效率高低排序。](#47-将下面的函数按照执行效率高低排序)
       * [48 如何用Python来进行查询和替换一个文本字符串？](#48-如何用python来进行查询和替换一个文本字符串)
-      * [50 用Python匹配HTML tag的时候，<.>和<.?>有什么区别？](#50-用python匹配html-tag的时候和有什么区别)
+      * [49 Python里面search()和match()的区别？](#49-python里面search和match的区别)
+      * [50 用Python匹配HTML tag的时候，<.*>和<.*?>有什么区别？](#50-用python匹配html-tag的时候和有什么区别)
       * [51 Python里面如何生成随机数？](#51-python里面如何生成随机数)
+      * [52 super init](#52-super-init)
+      * [53 range and xrange](#53-range-and-xrange)
   * [操作系统](#操作系统)
       * [1 select,poll和epoll](#1-selectpoll和epoll)
       * [2 调度算法](#2-调度算法)
@@ -179,6 +182,23 @@
       * [7 解释下Http请求头和常见响应状态码](#7-解释下http请求头和常见响应状态码)
 
   * [爬虫](#爬虫)
+      * [1 试列出至少三种目前流行的大型数据库的名称:________、_________、__________,其中您最熟悉的是__________,从__________年开始使用。](#1-试列出至少三种目前流行的大型数据库的名称:________、_________、__________,其中您最熟悉的是__________,从__________年开始使用。)
+      * [2 有表List，并有字段A、B、C，类型都是整数](#2-有表List，并有字段A、B、C，类型都是整数)
+      * [3 请简要说明视图的作用](#3-请简要说明视图的作用)
+      * [4 列举您使用过的python网络爬虫所用到的网络数据包（最熟悉的在前）](#4-列举您使用过的python网络爬虫所用到的网络数据包最熟悉的在前)
+      * [5 列举您使用过的python网络爬虫所用到的解析数据包（最熟悉的在前）](#5-列举您使用过的python网络爬虫所用到的解析数据包最熟悉的在前)
+      * [6 列举您使用过的python中的编码方式（最熟悉的在前）](#6-列举您使用过的python中的编码方式最熟悉的在前)
+      * [7 python3.5语言中enumerate的意思是_______________________](#7-python3.5语言中enumerate的意思是)
+      * [8 99的八进制表示是_______________________](#8-99的八进制表示是)
+      * [9 请举出三种常用的排序算法](#9-请举出三种常用的排序算法)
+      * [10 列出比较熟悉的爬虫框架](#10-列出比较熟悉的爬虫框架)
+      * [11 用4、9、2、7四个数字，可以使用+、-、*和/，每个数字使用一次，使表达式的结果为24，表达式是_____________________________](#11-用4927四个数字可以使用和每个数字使用一次使表达式的结果为24表达式是)
+      * [12 对你最有影响的或是您认为最有价值的软件方面的几本书是？](#12-对你最有影响的或是您认为最有价值的软件方面的几本书是)
+      * [13 您最熟悉的Unix环境是_____________.Unix下查询环境变量的命令是________,查询脚本定时任务的命令是____________________](#13-您最熟悉的unix环境是uix下查询环境变量的命令是查询脚本定时任务的命令是)
+      * [14 写出在网络爬虫爬取数据的过程中，遇到的防爬虫问题的解决方案](#14-写出在网络爬虫爬取数据的过程中，遇到的防爬虫问题的解决方案)
+      * [15 阅读以下Python程序](#15-阅读以下Python程序)
+      * [16 在某系统中一个整数占用两个八位字节，使用Python按下面的要求编写完整程序。](#16-在某系统中一个整数占用两个八位字节使用Python按下面的要求编写完整程序)
+
 
 **java面试题及答案**
   * [1 面向对象的特征有哪些方面?](#1-面向对象的特征有哪些方面)
@@ -1927,7 +1947,7 @@ replacement是被替换成的文本
 string是需要被替换的文本
 count是一个可选参数，指最大被替换的数量
 
-49.Python里面search()和match()的区别？
+#### 49 Python里面search()和match()的区别？
 match()函数只检测RE是不是在string的开始位置匹配，search()会扫描整个string查找匹配, 也就是说match()只有在0位置匹配成功的话才有返回，如果不是开始位置匹配成功的话，match()就返回none
 
 #### 50 用Python匹配HTML tag的时候，<.*>和<.*?>有什么区别？
@@ -1938,7 +1958,16 @@ import random
 random.random()
 它会返回一个随机的0和1之间的浮点数
 
+#### 52 super init
+super() lets you avoid referring to the base class explicitly, which can be nice. But the main advantage comes with multiple inheritance, where all sorts of fun stuff can happen. See the standard docs on super if you haven't already.
 
+Note that the syntax changed in Python 3.0: you can just say super().<code>__init__</code>() instead of super(ChildB, self).<code>__init__</code>() which IMO is quite a bit nicer.
+http://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods
+[http://blog.csdn.net/mrlevo520/article/details/51712440](http://blog.csdn.net/mrlevo520/article/details/51712440)
+
+#### 53 range and xrange
+都在循环时使用，xrange内存性能更好。 for i in range(0, 20): for i in xrange(0, 20): What is the difference between range and xrange functions in Python 2.X? range creates a list, so if you do range(1, 10000000) it creates a list in memory with 9999999 elements. xrange is a sequence object that evaluates lazily.
+http://stackoverflow.com/questions/94935/what-is-the-difference-between-range-and-xrange-functions-in-python-2-x
 ### 操作系统
 #### 1 select,poll和epoll
 其实所有的I/O都是轮询的方法,只不过实现的层面不同罢了.
