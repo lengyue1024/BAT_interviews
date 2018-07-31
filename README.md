@@ -269,11 +269,46 @@
   * [38 事件绑定和普通事件有什么区别](#38-事件绑定和普通事件有什么区别)
   * [39 IE和DOM事件流的区别](#39-ie和dom事件流的区别)
   * [40 IE和标准下有哪些兼容性的写法](#40-ie和标准下有哪些兼容性的写法)
-  * [](#)
-  * [](#)
-  * [](#)
-  * [](#)
-  * [](#)
+  * [41 ajax请求的时候get 和post方式的区别](#41-ajax请求的时候get-和post方式的区别)
+  * [42 call和apply的区别](#42-call和apply的区别)
+  * [43 ajax请求时，如何解释json数据](#43-ajax请求时如何解释json数据)
+  * [44 闭包是什么，有什么特性，对页面有什么影响](#44-闭包是什么有什么特性对页面有什么影响)
+  * [45 如何阻止事件冒泡和默认事件](#45-如何阻止事件冒泡和默认事件)
+  * [46 添加 删除 替换 插入到某个接点的方法](#46-添加-删除-替换-插入到某个接点的方法)
+  * [47 解释jsonp的原理，以及为什么不是真正的ajax](#47-解释jsonp的原理以及为什么不是真正的ajax)
+  * [48 javascript的本地对象，内置对象和宿主对象](#48-javascript的本地对象内置对象和宿主对象)
+  * [49 document load 和document ready的区别](#49-document-load-和document-ready的区别)
+  * [50 ”==”和“===”的不同](#50-和的不同)
+  * [51 javascript的同源策略](#51-javascript的同源策略)
+  * [52 编写一个数组去重的方法](#52-编写一个数组去重的方法)
+  * [53 你认为最常遇到的兼容Bug有哪些?有哪些问题是你认为解决起来最麻烦的?](#53-你认为最常遇到的兼容bug有哪些有哪些问题是你认为解决起来最麻烦的)
+  * [54 CSS定位方式有哪些?position属性的值有哪些?他们之间的区别是什么?](#54-css定位方式有哪些position属性的值有哪些他们之间的区别是什么)
+  * [55 函数的几种定义方法](#55-函数的几种定义方法)
+  * [56 对象的定义方法？](#56-对象的定义方法)
+  * [57 类的定义方法（prototype）（继承）](#57-类的定义方法prototype-继承)
+  * [58 this 关键字的指向](#58-this-关键字的指向)
+  * [59 异步ajax的优缺点都有什么？](#59-异步ajax的优缺点都有什么)
+  * [60 介绍js的基本数据类型。](#60-介绍js的基本数据类型)
+  * [61 Javascript如何实现继承？](#61-Javascript如何实现继承)
+  * [62 如何创建一个对象? （画出此对象的内存图）](#62-如何创建一个对象-画出此对象的内存图)
+  * [63 谈谈This对象的理解。](#63-谈谈this对象的理解)
+  * [64 事件是什么？IE与火狐的事件机制有什么区别？ 如何阻止冒泡](#64-事件是什么ie与火狐的事件机制有什么区别-如何阻止冒泡)
+  * [65 如何判断一个对象是否属于某个类？](#65-如何判断一个对象是否属于某个类)
+  * [66 Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是](#66-javascript中有一个函数执行时对象查找时永远不会去查找原型这个函数是)
+  * [67 对JSON 的了解？](#67-对json-的了解)
+  * [68 简述一下src与href的区别](#68-简述一下src与href的区别)
+  * [69 简述同步和异步的区别](#69-简述同步和异步的区别)
+  * [70 px和em的区别](#70-px和em的区别)
+  * [71 什么叫优雅降级和渐进增强？](#71-什么叫优雅降级和渐进增强)
+  * [72 浏览器的内核分别是什么？](#72-浏览器的内核分别是什么)
+  * [73 如何消除一个数组里面重复的元素？](#73、如何消除一个数组里面重复的元素？)
+  * [74 在Javascript中什么是伪数组？如何将伪数组转化为标准数组？](#74、在Javascript中什么是伪数组？如何将伪数组转化为标准数组？)
+  * [75 Javascript中callee和caller的作用？](#75-javascript中callee和caller的作用)
+  * [76 请描述一下cookies，sessionStorage和localStorage的区别](#76-请描述一下cookiessessionstorage和localstorage的区别)
+  * [77 手写数组快速排序](#77-手写数组快速排序)
+  * [78 统计字符串”aaaabbbccccddfgh”中字母个数或统计最多字母数](#78-统计字符串aaaabbbccccddfgh中字母个数或统计最多字母数)
+  * [79 一次完整的HTTP事务是怎样的一个过程？](#79-一次完整的http事务是怎样的一个过程)
+  * [80 对前端工程师这个职位你是怎么样理解的？](#80-对前端工程师这个职位你是怎么样理解的)
 
 ## PHP面试题及答案
 做为程序员，到IT企业面试的时候肯定会有笔试这关，那就要考考你的PHP知识了，所以本站收集一些实用的php面试题及答案给大家。
@@ -3268,57 +3303,57 @@ Var ev = ev || window.event
 document.documentElement.clientWidth || document.body.clientWidth
 Var target = ev.srcElement||ev.target
 
-41.ajax请求的时候get 和post方式的区别
+### 41 ajax请求的时候get 和post方式的区别
 
 一个在url后面 一个放在虚拟载体里面
 有大小限制
 安全问题
 应用不同 一个是论坛等只需要请求的，一个是类似修改密码的
 
-42.call和apply的区别
+### 42 call和apply的区别
 Object.call(this,obj1,obj2,obj3)
 Object.apply(this,arguments)
 
-43.ajax请求时，如何解释json数据
+### 43 ajax请求时，如何解释json数据
 使用eval parse 鉴于安全性考虑 使用parse更靠谱
 
-44.闭包是什么，有什么特性，对页面有什么影响
+### 44 闭包是什么，有什么特性，对页面有什么影响
 闭包就是能够读取其他函数内部变量的函数。
 
-45.如何阻止事件冒泡和默认事件
+### 45 如何阻止事件冒泡和默认事件
 canceBubble return false
 
-46.添加 删除 替换 插入到某个接点的方法
+### 46 添加 删除 替换 插入到某个接点的方法
 obj.appendChidl()
 obj.innersetBefore
 obj.replaceChild
 obj.removeChild
 
-47.解释jsonp的原理，以及为什么不是真正的ajax
+### 47 解释jsonp的原理，以及为什么不是真正的ajax
 动态创建script标签，回调函数
 Ajax是页面无刷新请求数据操作
 
-48.javascript的本地对象，内置对象和宿主对象
+### 48 javascript的本地对象，内置对象和宿主对象
 
 
 本地对象为array obj regexp等可以new实例化
 内置对象为gload Math 等不可以实例化的
 宿主为浏览器自带的document,window 等
 
-49.document load 和document ready的区别
+### 49 document load 和document ready的区别
 Document.onload 是在结构和样式加载完才执行js
 Document.ready原生种没有这个方法，jquery中有 $().ready(function)
 
-50.”==”和“===”的不同
+### 50 ”==”和“===”的不同
 
 前者会自动转换类型
 后者不会
 
-51.javascript的同源策略
+### 51 javascript的同源策略
 
 一段脚本只能读取来自于同一来源的窗口和文档的属性，这里的同一来源指的是主机名、协议和端口号的组合
 
-52.编写一个数组去重的方法
+### 52 编写一个数组去重的方法
 　　function oSort(arr)
 　　{
 　　var result ={};
@@ -3335,36 +3370,36 @@ Document.ready原生种没有这个方法，jquery中有 $().ready(function)
 　　}
 </arr.length;i++)
 
-53.你认为最常遇到的兼容Bug有哪些?有哪些问题是你认为解决起来最麻烦的?
+### 53 你认为最常遇到的兼容Bug有哪些?有哪些问题是你认为解决起来最麻烦的?
 IE6 PNG
 IE6 Fixed
 
-54.CSS定位方式有哪些?position属性的值有哪些?他们之间的区别是什么?
+### 54 CSS定位方式有哪些?position属性的值有哪些?他们之间的区别是什么?
 在CSS中关于定位的内容是：position:relative | absolute | static | fixed
 static 没有特别的设定，遵循基本的定位规定，不能通过z-index进行层次分级。
 relative 不脱离文档流，参考自身静态位置通过 top,bottom,left,right 定位，并且可以通过z-index进行层次分级。
 absolute 脱离文档流，通过 top,bottom,left,right 定位。选53D6其最近的父级定位元素，当父级 position 为 static 时，absolute元素将以body坐标原点进行定位，可以通过z-index进行层次分级。
 fixed 固定定位，这里他所固定的对像是可视窗口而并非是body或是父级元素。可通过z-index进行层次分级。
 
-### 55.函数的几种定义方法？
+### 55 函数的几种定义方法？
 function a(){},
 var a = function(){}
 
-### 56.对象的定义方法？
+### 56 对象的定义方法？
 a = new Object(), a = {}
 
-### 57.类的定义方法（prototype）（继承）
+### 57 类的定义方法（prototype）（继承）
 Var a = function(){}
 a.prototype = {}
 new a();
 
-### 58.this 关键字的指向
+### 58 this 关键字的指向
 obj.foo() == obj        //方法调用模式,this指向obj
 foo() == window;         //函数调用模式,this指向window
 new obj.foo() == obj    //构造器调用模式, this指向新建立对象
 foo.call(obj) == obj;//APPLY调用模式,this指向obj
 
-### 59.异步ajax的优缺点都有什么？
+### 59 异步ajax的优缺点都有什么？
 优点：
 相对于同步ajax：不会造成UI卡死，用户体验好。
 相对于刷新页面，省流量
@@ -3374,48 +3409,48 @@ foo.call(obj) == obj;//APPLY调用模式,this指向obj
 搜索引擎不友好
 数据安全
 
-### 60、介绍js的基本数据类型。
+### 60 介绍js的基本数据类型。
 number,string,boolean,object,undefined
 　　
-### 61、Javascript如何实现继承？
+### 61 Javascript如何实现继承？
 通过原型和构造器
 
-### 62、如何创建一个对象? （画出此对象的内存图）
+### 62 如何创建一个对象? （画出此对象的内存图）
 
 function Person(name, age) {    this.name = name;    this.age = age;    this.sing = function() { alert(this.name) }   }
 　
-### 63、谈谈This对象的理解。
+### 63 谈谈This对象的理解。
 this是js的一个关键字，随着函数使用场合不同，this的值会发生变化。但是有一个总原则，那就是this指的是调用函数的那个对象。this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象
 
-### 64、事件是什么？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+### 64 事件是什么？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
 （1） 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。   
 （2） 事件处理机制：IE是事件冒泡、火狐是 事件捕获；
 （3） ev.stopPropagation();
 
-### 65、如何判断一个对象是否属于某个类？
+### 65 如何判断一个对象是否属于某个类？
 使用instanceof （待完善）   if(a instanceof Person){       alert('yes');   }
 
-### 66、Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？
+### 66 Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？
 hasOwnProperty
 
-### 67、对JSON 的了解？
+### 67 对JSON 的了解？
 　　JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小{'age':'12', 'name':'back'}
 
-### 68、简述一下src与href的区别
+### 68 简述一下src与href的区别
 href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。
 src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
 
-### 69、简述同步和异步的区别
+### 69 简述同步和异步的区别
 
 同步是阻塞模式，异步是非阻塞模式。
 同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；
 异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
 
-### 70、px和em的区别
+### 70 px和em的区别
 px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。
 浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em
 
-### 71、什么叫优雅降级和渐进增强？
+### 71 什么叫优雅降级和渐进增强？
 渐进增强 progressive enhancement：
 针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
 优雅降级 graceful degradation：
@@ -3425,7 +3460,7 @@ a. 优雅降级是从复杂的现状开始，并试图减少用户体验的供�
 b. 渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要
 c. 降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带
 
-### 72、浏览器的内核分别是什么?
+### 72 浏览器的内核分别是什么?
 IE: trident内核
 Firefox：gecko内核
 Safari：webkit内核
@@ -3433,7 +3468,7 @@ Opera：以前是presto内核，Opera现已改用Google Chrome的Blink内核
 Chrome：Blink(基于webkit，Google与Opera Software共同开发)
 
 
-### 73、如何消除一个数组里面重复的元素？
+### 73 如何消除一个数组里面重复的元素？
 
 // 方法一：
 var arr1 =[1,2,2,2,3,3,3,4,5,6],
@@ -3445,7 +3480,7 @@ for(var i = 0,len = arr1.length; i< len; i++){
 }
 document.write(arr2); // 1,2,3,4,5,6
 
-### 74、在Javascript中什么是伪数组？如何将伪数组转化为标准数组？
+### 74 在Javascript中什么是伪数组？如何将伪数组转化为标准数组？
 伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。
 function log(){
       var args = Array.prototype.slice.call(arguments);  
@@ -3455,25 +3490,24 @@ function log(){
       console.log.apply(console, args);
 };
 
-### 75、Javascript中callee和caller的作用？
+### 75 Javascript中callee和caller的作用？
 caller是返回一个对函数的引用，该函数调用了当前函数；
 callee是返回正在被执行的function函数，也就是所指定的function对象的正文。
 
-### 76、请描述一下cookies，sessionStorage和localStorage的区别
+### 76 请描述一下cookies，sessionStorage和localStorage的区别
 sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
 web storage和cookie的区别
 Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。
 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。
 
-### 77、手写数组快速排序
-
+### 77 手写数组快速排序
 关于快排算法的详细说明，可以参考阮一峰老师的文章快速排序
 “快速排序”的思想很简单，整个排序过程只需要三步：
 （1）在数据集之中，选择一个元素作为”基准”（pivot）。
 （2）所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。
 （3）对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。
 
-### 78、统计字符串”aaaabbbccccddfgh”中字母个数或统计最多字母数。
+### 78 统计字符串”aaaabbbccccddfgh”中字母个数或统计最多字母数。
 ```
 var str = "aaaabbbccccddfgh";
 var obj  = {};
@@ -3491,7 +3525,7 @@ for(key in obj){
     document.write(obj[key].value +'='+obj[key].count+' '); // a=4  b=3  c=4  d=2  f=1  g=1  h=1
 }
 ```
-### 79、一次完整的HTTP事务是怎样的一个过程？
+### 79 一次完整的HTTP事务是怎样的一个过程？
 
 基本流程：
 
@@ -3507,7 +3541,7 @@ e. 浏览器解析html代码，并请求html代码中的资源
 
 f. 浏览器对页面进行渲染呈现给用户
 
-### 80、对前端工程师这个职位你是怎么样理解的？
+### 80 对前端工程师这个职位你是怎么样理解的？
 
 a. 前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好
 
