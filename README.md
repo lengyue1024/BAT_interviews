@@ -536,12 +536,12 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
 答:echo "<a href='index.php'>aaa</a>";
 #### 37、下面哪个函数可以打开一个文件，以对文件进行读和写操作?(1分)
     (a) fget() (b) file_open() (c) fopen() (d) open_file()  [  c  ]
-#### 38、下面哪个选项没有将 john 添加到users 数组中? (1分)
+#### 38 下面哪个选项没有将 john 添加到users 数组中? (1分)
 　　(a) $users[] = ‘john’;
 　　(b) array_add($users,’john’);
 　　(c) array_push($users,‘john’);
 　　(d) $users ||= ‘john’;  [  a , c  ]
-#### 39、下面的程序会输入是否?(1分)
+#### 39 下面的程序会输入是否?(1分)
 　　$num = 10;
 　　function multiply(){
 　　$num = $num * 10;
@@ -550,7 +550,7 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
 　　echo $num;
 　　?>
     输出:10
-#### 40、使用php写一段简单查询，查出所有姓名为“张三”的内容并打印出来 (2分)
+#### 40 使用php写一段简单查询，查出所有姓名为“张三”的内容并打印出来 (2分)
 　　表名User
 　　Name Tel Content Date
 　　张三 13333663366 大专毕业 2006-10-11
@@ -563,19 +563,24 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
     while($rs = mysql_fetch_array($result)){
       echo $rs["tel"].$rs["content"].$rs["date"];
     }     
-34、如何使用下面的类,并解释下面什么意思?(3)
+#### 41 如何使用下面的类,并解释下面什么意思?(3分)
+```
 　　class test{
      function Get_test($num){
 　　    $num=md5(md5($num)."En");
 　　    return $num;
 　　 }
 　　}
-答:$testnum = "123";
+```
+答:
+```
+$testnum = "123";
    $object = new test();
    $encrypt = $object->Get_test($testnum);
    echo $encrypt;
-   类test里面包含Get_test方法,实例化类调用方法多字符串加密
-35、写出 SQL语句的格式 : 插入 ，更新 ，删除 (4分)
+```
+类test里面包含Get_test方法,实例化类调用方法多字符串加密
+#### 42 写出 SQL语句的格式 : 插入 ，更新 ，删除 (4分)
 　　表名User
 　　Name Tel Content Date
 　　张三 13333663366 大专毕业 2006-10-11
@@ -589,35 +594,36 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
     mysql_query("UPDATE `user` SET date='".$nowDate."' WHERE name='张山'");
 　　(c) 请写出删除名为张四的全部记录
     mysql_query("DELETE FROM `user` WHERE name='张四'");
-36、请写出数据类型(int char varchar datetime text)的意思; 请问varchar和char有什么区别(2分)
+
+#### 43 请写出数据类型(int char varchar datetime text)的意思; 请问varchar和char有什么区别(2分)
 答:int是数字类型,char固定长度字符串,varchar实际长度字符串,datetime日期时间型,text文本字符串
    char的场地固定为创建表设置的长度,varchar为可变长度的字符
-38、写出以下程序的输出结果 (1分)
+#### 44 写出以下程序的输出结果 (1分)
 　　$b=201;
 　　$c=40;
     $a=$b>$c?4:5;
 　　echo $a;
 　　?>
 答:4
-39、检测一个变量是否有设置的函数是否?是否为空的函数是?(2分)
+#### 45 检测一个变量是否有设置的函数是否?是否为空的函数是?(2分)
 答:isset($str),empty($str);
-40、取得查询结果集总数的函数是?(1分)
+#### 46 取得查询结果集总数的函数是?(1分)
 答:mysql_num_rows($result);
-41、$arr = array('james', 'tom', 'symfony'); 请打印出第一个元素的值 (1分)
+#### 47 $arr = array('james', 'tom', 'symfony'); 请打印出第一个元素的值 (1分)
 答:echo $array[0];
-42、请将41题的数组的值用','号分隔并合并成字串输出(1分)
+#### 48 请将41题的数组的值用','号分隔并合并成字串输出(1分)
 答:for($i=0;$i<count($array);$i++){ echo $array[$i].",";}
-43、$a = 'abcdef'; 请取出$a的值并打印出第一个字母(1分)
+#### 49 $a = 'abcdef'; 请取出$a的值并打印出第一个字母(1分)
 答:echo $a{0} 或 echo substr($a,0,1)
-44、PHP可以和sql server/oracle等数据库连接吗?(1分)
+#### 50 PHP可以和sql server/oracle等数据库连接吗?(1分)
 答:当然可以
-45、请写出PHP5权限控制修饰符(3分)
+#### 51 请写出PHP5权限控制修饰符(3分)
 答:public(公共),private(私用),protected(继承)
-46、请写出php5的构造函数和析构函数(2分)
+#### 52 请写出php5的构造函数和析构函数(2分)
 ```
 答: __construct , __destruct
 ````
-47、完成以下:
+#### 53 完成以下:
 
    (一)创建新闻发布系统，表名为message有如下字段 (3分)
 　　id 文章id
@@ -671,7 +677,7 @@ HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是
 }
 ```
 
-### 编程题
+### 3 编程题
 #### 1. 写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名
    例如: http://www.sina.com.cn/abc/de/fg.php?id=1 需要取出 php 或 .php
 ```   
