@@ -1,7 +1,6 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
-**2018-BAT_interviews**
-分享2018年最新BAT面试题
+
 
 # PHP面试题及答案
    * [1 基础题](#1-基础题)
