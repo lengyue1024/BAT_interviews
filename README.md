@@ -1324,8 +1324,7 @@ http://stackoverflow.com/questions/3394835/args-and-kwargs
 这个面试官问了,我说了老半天,不知道他问的真正意图是什么.
 这篇文章很好的介绍了新式类的特性: http://www.cnblogs.com/btchenguang/archive/2012/09/17/2689146.html
 新式类很早在2.2就出现了,所以旧式类完全是兼容的问题,Python3里的类全部都是新式类.这里有一个MRO问题可以了解下(新式类是广度优先,旧式类是深度优先),<Python核心编程>里讲的也很多.
-#### 15
-__new__和__init__的区别
+#### 15 __new__和__init__的区别;
 ```
 这个__new__确实很少见到,先做了解吧.
 1.	__new__是一个静态方法,而__init__是一个实例方法.
@@ -1336,7 +1335,7 @@ ps: __metaclass__是创建类时起作用.所以我们可以分别使用__metacl
 ```
 #### 16 单例模式
 这个绝对常考啊.绝对要记住1~2个方法,当时面试官是让手写的.
-1 使用__new__方法
+##### 1 使用__new__方法
 ```
 	class Singleton(object):
     def __new__(cls, *args, **kw):
@@ -1348,7 +1347,7 @@ ps: __metaclass__是创建类时起作用.所以我们可以分别使用__metacl
 class MyClass(Singleton):
     a = 1
 ```
-2 共享属性
+##### 2 共享属性
 创建实例时把所有实例的__dict__指向同一个字典,这样它们具有相同的属性和方法.
 ```
 1	class Borg(object):
@@ -1361,7 +1360,7 @@ class MyClass(Singleton):
 8 class MyClass2(Borg):
 9    a = 1
 ```
-3 装饰器版本
+##### 3 装饰器版本
 ```
 1	def singleton(cls, *args, **kw):
 2    instances = {}
@@ -1374,7 +1373,7 @@ class MyClass(Singleton):
 9 @singleton
 10 class MyClass:
 ```
-4 import方法
+##### 4 import方法
 作为python的模块是天然的单例模式
 ```
 	# mysingleton.py
