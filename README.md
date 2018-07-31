@@ -208,7 +208,7 @@
   * [29 如何实现对象克隆](#29-如何实现对象克隆)
   * [30 GC 是什么？为什么要有GC？](#30-gc-是什么为什么要有gc)
   * [31 String s=new String(“xyz”);创建了几个字符串对象？](#31-string-snew-stringxyz创建了几个字符串对象)
-  * [32 接口是否可继承（extends）接口? 抽象类是否可实现（implements）接口? 抽象类是否可继承具体类（concrete class）?](#32-接口是否可继承extends接口-抽象类是否可实现implements接口抽象类是否可继承具体类concrete-class)
+  * [32 接口是否可继承（extends）接口? 抽象类是否可实现（implements）接口? 抽象类是否可继承具体类（concrete class）?](#32-接口是否可继承extends接口-抽象类是否可实现implements接口-抽象类是否可继承具体类concrete-class)
   * [33 一个“.java”源文件中是否可以包含多个类（不是内部类）？有什么限制？](#33-一个java源文件中是否可以包含多个类不是内部类有什么限制)
   * [34 Anonymous Inner Class(匿名内部类)是否可以继承其它类？是否可以实现接口？](#34-anonymous-inner-class匿名内部类是否可以继承其它类是否可以实现接口)
   * [35 内部类可以引用它的包含类（外部类）的成员吗？有没有什么限制？](#35-内部类可以引用它的包含类外部类的成员吗有没有什么限制)
