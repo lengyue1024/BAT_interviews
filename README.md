@@ -3059,49 +3059,49 @@ SecurityException （安全异常）
 ## 前端面试题及答案
 2018 BAT最新《前端必考面试题》
 
-1、Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?
+### 1 Doctype作用？ 严格模式与混杂模式如何区分？它们有何意义？
 （1）、 声明位于文档中的最前面，处于 标签之前。告知浏览器的解析器，用什么文档类型 规范来解析这个文档。
 （2）、严格模式的排版和 JS 运作模式是  以该浏览器支持的最高标准运行。
 （3）、在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。
 （4）、DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。
 
-2、行内元素有哪些？块级元素有哪些？
+### 2 行内元素有哪些？块级元素有哪些？
 （1）CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，  比如div默认display属性值为“block”，成为“块级”元素；  span默认display属性值为“inline”，是“行内”元素。  
 （2）行内元素有：a b span img input select strong（强调的语气）  块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p  
 
-3、link 和@import 的区别是？
+### 3 link 和@import 的区别是？
 （1）link属于XHTML标签，而@import是CSS提供的;
 （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
 （3）import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;
 （4）link方式的样式的权重 高于@import的权重.
 
-4、浏览器的内核分别是什么?
+### 4 浏览器的内核分别是什么?
 IE浏览器的内核Trident、Mozilla的Gecko、Chrome的Blink（WebKit的分支）、Opera内核原为Presto，现为Blink；
 
 
-5、HTML5有哪些新特性？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
+### 5 HTML5有哪些新特性？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？
 HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
 绘画 canvas    用于媒介回放的 video 和 audio 元素   本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失；  sessionStorage 的数据在浏览器关闭后自动删除  语意化更好的内容元素，比如 article、footer、header、nav、section   表单控件，calendar、date、time、email、url、search    新的技术webworker, websockt, Geolocation
 
-6、对语义化如何理解？
+### 6 对语义化如何理解？
 用正确的标签做正确的事情！
 HTML语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
 
-7、HTML5的离线储存有几种方式？
+### 7 HTML5的离线储存有几种方式？
 
 localStorage长期存储数据，浏览器关闭后数据不丢失；sessionStorage  数据在浏览器关闭后自动删除。
 
-8、iframe有那些缺点？
+### 8 iframe有那些缺点？
 
 iframe会阻塞主页面的Onload事件；
 iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以可以绕开以上两个问题。
 
 
-9、请描述一下 cookies，sessionStorage 和 localStorage 的区别？
+### 9 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
 
 cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会sessionStorage和localStorage的存储空间更大；sessionStorage和localStorage有更多丰富易用的接口；sessionStorage和localStorage各自独立的存储空间；
 
-10、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
+### 10 CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
 
 1.id选择器（ # myid）    　　　　2.类选择器（.myclassname）    
 
@@ -3119,7 +3119,7 @@ cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage�
 !important >  id > class > tag     important 比 内联优先级高
 
 
-11、CSS3新增伪类举例：
+### 11 CSS3新增伪类举例：
 p:first-of-type 选择属于其父元素的首个元素的每个元素。
 p:last-of-type  选择属于其父元素的最后元素的每个元素。
 p:only-of-type  选择属于其父元素唯一的元素的每个元素。
@@ -3128,7 +3128,7 @@ p:nth-child(2)  选择属于其父元素的第二个子元素的每个元素。
 :enabled  :disabled 控制表单控件的禁用态。
 :checked单选框或复选框被选中。
 
-12、如何居中div？如何居中一个浮动元素？
+### 12 如何居中div？如何居中一个浮动元素？
 给div设置一个宽度，然后添加margin:0 auto属性
 div{    width:200px;    margin:0 auto; }  
 居中一个浮动元素
@@ -3143,62 +3143,62 @@ div{    width:200px;    margin:0 auto; }
 　　inherit 规定从父元素继承 position 属性的值。
 
 
-13、为什么要初始化CSS样式？
+### 13 为什么要初始化CSS样式？
 　　因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。最简单的初始化方法就是： * {padding: 0; margin: 0;} （不建议）淘宝的样式初始化： body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }body, button, input, select, textarea { font:12px/1.5tahoma, arial, /5b8b/4f53; }h1, h2, h3, h4, h5, h6{ font-size:100%; }address, cite, dfn, em, var { font-style:normal; }code, kbd, pre, samp { font-family:couriernew, courier, monospace; }small{ font-size:12px; }ul, ol { list-style:none; }a { text-decoration:none; }a:hover { text-decoration:underline; }sup { vertical-align:text-top; }sub{ vertical-align:text-bottom; }legend { color:#000; }fieldset, img { border:0; }button, input, select, textarea { font-size:100%; }table { border-collapse:collapse; border-spacing:0; }
 
 
-14、css定义的权重
+### 14 css定义的权重
 以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：/* 权重为1* /div{}/* 权重为10*/.class1{}/* 权重为100*/#id1{}/* 权重为100+1=101*/#id1 div{}/* 权重为10+1=11* /.class1 div{}/* 权重为10+10+1=21*/.class1 .class2 div{} 如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
 
-15、CSS3有哪些新特性？
+### 15 CSS3有哪些新特性？
 
 CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px），  对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）  transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜  增加了更多的CSS选择器  多背景 rgba
 
-16、介绍一下CSS的盒子模型？
+### 16 介绍一下CSS的盒子模型？
 　　（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
 
 　　（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
 
-17.对WEB标准以及W3C的理解与认识？
+### 17 对WEB标准以及W3C的理解与认识？
 标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;
 
-18.XHTML和HTML有什么区别？
+### 18 XHTML和HTML有什么区别？
 HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言最主要的不同：
 XHTML 元素必须被正确地嵌套。
 XHTML 元素必须被关闭。标签名必须用小写字母。
 XHTML 文档必须拥有根元素。
 
-19.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?
+### 19 Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?
 用于声明文档使用那种规范(HTML/XHTML)一般为 严格 过度 基于框架的html文档
 加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug
 
-20.行内元素有哪些?块级元素有哪些?CSS的盒模型?
+### 20 行内元素有哪些?块级元素有哪些?CSS的盒模型?
 块级元素：div p h1 h2 h3 h4 form ul
 行内元素: a b br i span input select
 Css盒模型:内容，border ,margin，padding
 
-21.CSS引入的方式有哪些? link和@import的区别是?
+### 21 CSS引入的方式有哪些? link和@import的区别是?
 内联 内嵌 外链 导入
 区别 ：同时加载前者无兼容性，后者CSS2.1以下浏览器不支持
 Link 支持使用javascript改变样式，后者不可
 
 
-22.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?
+### 22 CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?
 标签选择符 类选择符 id选择符
 继承不如指定 Id>class>标签选择
 后者优先级高
 
-23.前端页面有哪三层构成，分别是什么?作用是什么?
+### 23 前端页面有哪三层构成，分别是什么?作用是什么?
 结构层 HTML 表示层 CSS 行为层 js
 
 24.CSS的基本语句构成是?
 选择器{属性1:值1;属性2:值2;……}
 
-25.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?
+### 25 你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?
 Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)
 
 
-26.写出几种IE6 BUG的解决方法
+### 26 写出几种IE6 BUG的解决方法
 1.双边距BUG float引起的 使用display
 2.3像素问题 使用float引起的 使用dislpay:inline -3px
 3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active
@@ -3210,61 +3210,59 @@ Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)
 9.ie 6 不支持!important
 
 
-27.img标签上title与alt属性的区别是什么?
-
-
+### 27 img标签上title与alt属性的区别是什么?
 Alt 当图片不显示是 用文字代表。
 Title 为该属性提供信息
 
-28.描述css reset的作用和用途。
+### 28 描述css reset的作用和用途。
 Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一
 
-29.解释css sprites，如何使用。
+### 29 解释css sprites，如何使用。
 Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量
 
-30.浏览器标准模式和怪异模式之间的区别是什么?
+### 30 浏览器标准模式和怪异模式之间的区别是什么?
 盒子模型 渲染模式的不同
 使用 window.top.document.compatMode 可显示为什么模式
 
-31.你如何对网站的文件和资源进行优化?期待的解决方案包括：
+### 31 你如何对网站的文件和资源进行优化?期待的解决方案包括：
 文件合并
 文件最小化/文件压缩
 使用CDN托管
 缓存的使用
 
-32.什么是语义化的HTML?
+### 32 什么是语义化的HTML?
 直观的认识标签 对于搜索引擎的抓取有好处
 
-33.清除浮动的几种方式，各自的优缺点
+### 33 清除浮动的几种方式，各自的优缺点
 1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)
 2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)
 3.是用afert伪元素清除浮动(用于非IE浏览器)
 
 
 　
-34.javascript的typeof返回哪些数据类型
+### 34 javascript的typeof返回哪些数据类型
 Object number function boolean underfind
 
-35.例举3种强制类型转换和2种隐式类型转换?
+### 35 例举3种强制类型转换和2种隐式类型转换?
 强制（parseInt,parseFloat,number）
 隐式（== – ===）
 
-36.split() join() 的区别
+### 36 split() join() 的区别
 前者是切割成数组的形式，后者是将数组转换成字符串
 
-37.数组方法pop() push() unshift() shift()
+### 37 数组方法pop() push() unshift() shift()
 Push()尾部添加 pop()尾部删除
 Unshift()头部添加 shift()头部删除
 
-38.事件绑定和普通事件有什么区别
+### 38 事件绑定和普通事件有什么区别
 
-39.IE和DOM事件流的区别
+### 39 IE和DOM事件流的区别
 1.执行顺序不一样、
 2.参数不一样
 3.事件加不加on
 4.this指向问题
 
-40.IE和标准下有哪些兼容性的写法
+### 40 IE和标准下有哪些兼容性的写法
 
 Var ev = ev || window.event
 document.documentElement.clientWidth || document.body.clientWidth
