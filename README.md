@@ -127,7 +127,7 @@
       * [5 Post和Get区别](#5-post和get区别)
       * [6 Cookie和Session](#6-cookie和session)
       * [7 apache和nginx的区别](#7-apache和nginx的区别)
-      * [8 网站用户密码保存](8-网站用户密码保存)
+      * [8 网站用户密码保存](#8-网站用户密码保存)
       * [9 HTTP和HTTPS](#9-http和https)
       * [10 XSRF和XSS](#10-xsrf和xss)
       * [11 RESTful架构(SOAP,RPC)](#11-restful架构soaprpc)
