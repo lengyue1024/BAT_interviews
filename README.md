@@ -17,7 +17,7 @@
       * [8 PHP的意思(送1分) ](#8-php的意思送1分)
       * [9 MYSQL取得当前时间的函数是?，格式化日期的函数是(2分)](#9-mysql取得当前时间的函数是格式化日期的函数是2分)
       * [10 实现中文字串截取无乱码的方法。(3分)](#10-实现中文字串截取无乱码的方法3分)
-      * [11 您是否用过版本控制软件? 如果有您用的版本控制软件的名字是?(1分)](#11、您是否用过版本控制软件? 如果有您用的版本控制软件的名字是1分)
+      * [11 您是否用过版本控制软件? 如果有您用的版本控制软件的名字是?(1分)](#11-您是否用过版本控制软件-如果有您用的版本控制软件的名字是1分)
       * [12 您是否用过模板引擎? 如果有您用的模板引擎的名字是?(1分)](#12-您是否用过模板引擎-如果有您用的模板引擎的名字是1分)
       * [13 请简单阐述您最得意的开发之作(4分) ](#13-请简单阐述您最得意的开发之作4分)
       * [14 对于大流量的网站,您采用什么样的方法来解决访问量问题?(4分) ](#14-对于大流量的网站您采用什么样的方法来解决访问量问题4分)
@@ -398,21 +398,21 @@
 答:echo strrev($a);
 #### 6 优化MYSQL数据库的方法。(4分，多写多得)
 答:
-1、选取最适用的字段属性,尽可能减少定义字段长度,尽量把字段设置NOT NULL,例如'省份,性别',最好设置为ENUM
-2、使用连接（JOIN）来代替子查询:
+##### 1 选取最适用的字段属性,尽可能减少定义字段长度,尽量把字段设置NOT NULL,例如'省份,性别',最好设置为ENUM
+##### 2 使用连接（JOIN）来代替子查询:
    a.删除没有任何订单客户:DELETE FROM customerinfo WHERE customerid NOT in(SELECT customerid FROM orderinfo)
    b.提取所有没有订单客户:SELECT FROM customerinfo WHERE customerid NOT in(SELECT customerid FROM orderinfo)
    c.提高b的速度优化:SELECT FROM customerinfo LEFT JOIN orderid customerinfo.customerid=orderinfo.customerid
    WHERE orderinfo.customerid IS NULL
-3、使用联合(UNION)来代替手动创建的临时表
+##### 3 使用联合(UNION)来代替手动创建的临时表
    a.创建临时表:SELECT name FROM `nametest` UNION SELECT username FROM `nametest2`
-4、事务处理:
+##### 4 事务处理:
    a.保证数据完整性,例如添加和修改同时,两者成立则都执行,一者失败都失败
    mysql_query("BEGIN");
    mysql_query("INSERT INTO customerinfo (name) VALUES ('$name1')";
    mysql_query("SELECT * FROM `orderinfo` where customerid=".$id");
    mysql_query("COMMIT");
-5、锁定表,优化事务处理:
+##### 5 锁定表,优化事务处理:
    a.我们用一个 SELECT 语句取出初始数据，通过一些计算，用 UPDATE 语句将新值更新到表中。
      包含有 WRITE 关键字的 LOCK TABLE 语句可以保证在 UNLOCK TABLES 命令被执行之前，
      不会有其它的访问来对 inventory 进行插入、更新或者删除的操作
@@ -420,10 +420,10 @@
    mysql_query("SELECT customerid FROM `customerinfo` where id=".$id);
    mysql_query("UPDATE `orderinfo` SET ordertitle='$title' where customerid=".$id);
    mysql_query("UNLOCK TABLES");
-6、使用外键,优化锁定表
+##### 6 使用外键,优化锁定表
    a.把customerinfo里的customerid映射到orderinfo里的customerid,
      任何一条没有合法的customerid的记录不会写到orderinfo里
-     ```
+```
    CREATE TABLE customerinfo
    (
      customerid INT NOT NULL,
@@ -437,10 +437,10 @@
      FOREIGN KEY (customerid) REFERENCES customerinfo
      (customerid) ON DELETE CASCADE    
    )TYPE = INNODB;
-   ```
+```
    注意:'ON DELETE CASCADE',该参数保证当customerinfo表中的一条记录删除的话同时也会删除order
          表中的该用户的所有记录,注意使用外键要定义事务安全类型为INNODB;
-7、建立索引:
+##### 7 建立索引:
    a.格式:
    (普通索引)->
    创建:CREATE INDEX <索引名> ON tablename (索引字段)
@@ -453,10 +453,10 @@
    (主键)->
    它是唯一索引,一般在创建表是建立,格式为:
    CREATA TABLE tablename ([...],PRIMARY KEY[索引字段])
-8、优化查询语句
+##### 8 优化查询语句
    a.最好在相同字段进行比较操作,在建立好的索引字段上尽量减少函数操作
    例子1:
-   ```
+```
    SELECT * FROM order WHERE YEAR(orderDate)<2008;(慢)
    SELECT * FROM order WHERE orderDate<"2008-01-01";(快)
    例子2:
@@ -465,7 +465,7 @@
    例子3:
    SELECT * FROM order WHERE title like "%good%";
    SELECT * FROM order WHERE title>="good" and name<"good";
-   ```
+```
 #### 8 PHP的意思(送1分)
 答:PHP是一个基于服务端来创建动态网站的脚本语言，您可以用PHP和HTML生成网站主页
 #### 9 MYSQL取得当前时间的函数是?，格式化日期的函数是(2分)
