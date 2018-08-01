@@ -1,7 +1,6 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
-
 # PHP面试题及答案
    * [1 基础题](#1-基础题)
       * [1 表单中 get与post提交方法的区别?](#1-表单中-get与post提交方法的区别)
@@ -384,21 +383,20 @@
 答:事务（transaction）是作为一个单元的一组有序的数据库操作。如果组中的所有操作都成功，则认为事务成功，即使只有一个操作失败，事务也不成功。如果所有操作完成，
 事务则提交，其修改将作用于所有其他数据库进程。如果一个操作失败，则事务将回滚，该事务所有操作的影响都将取消。
 ### 2 简述题
-#### 1、用PHP打印出前一天的时间格式是2006-5-10 22:21:21(2分)
+#### 1 用PHP打印出前一天的时间格式是2006-5-10 22:21:21(2分)
 答:echo date('Y-m-d H:i:s', strtotime('-1 days'));  
-#### 2、echo(),print(),print_r()的区别(3分)
+#### 2 echo(),print(),print_r()的区别(3分)
 答:echo是PHP语句, print和print_r是函数,语句没有返回值,函数可以有返回值(即便没有用)   
    print（）    只能打印出简单类型变量的值(如int,string)   
    print_r（） 可以打印出复杂类型变量的值(如数组,对象)   
    echo     输出一个或者多个字符串
-#### 3、能够使HTML和PHP分离开使用的模板(1分)
+#### 3 能够使HTML和PHP分离开使用的模板(1分)
 答:Smarty,Dwoo,TinyButStrong,Template Lite,Savant,phemplate,XTemplate
-#### 4、使用哪些工具进行版本控制?(1分)
+#### 4 使用哪些工具进行版本控制?(1分)
 答:cvs,svn,vss;
-#### 5、如何实现字符串翻转?(3分)
+#### 5 如何实现字符串翻转?(3分)
 答:echo strrev($a);
-#### 6、优化MYSQL数据库的方法。(4分，多写多得)
-```
+#### 6 优化MYSQL数据库的方法。(4分，多写多得)
 答:
 1、选取最适用的字段属性,尽可能减少定义字段长度,尽量把字段设置NOT NULL,例如'省份,性别',最好设置为ENUM
 2、使用连接（JOIN）来代替子查询:
@@ -425,6 +423,7 @@
 6、使用外键,优化锁定表
    a.把customerinfo里的customerid映射到orderinfo里的customerid,
      任何一条没有合法的customerid的记录不会写到orderinfo里
+     ```
    CREATE TABLE customerinfo
    (
      customerid INT NOT NULL,
@@ -438,6 +437,7 @@
      FOREIGN KEY (customerid) REFERENCES customerinfo
      (customerid) ON DELETE CASCADE    
    )TYPE = INNODB;
+   ```
    注意:'ON DELETE CASCADE',该参数保证当customerinfo表中的一条记录删除的话同时也会删除order
          表中的该用户的所有记录,注意使用外键要定义事务安全类型为INNODB;
 7、建立索引:
@@ -456,6 +456,7 @@
 8、优化查询语句
    a.最好在相同字段进行比较操作,在建立好的索引字段上尽量减少函数操作
    例子1:
+   ```
    SELECT * FROM order WHERE YEAR(orderDate)<2008;(慢)
    SELECT * FROM order WHERE orderDate<"2008-01-01";(快)
    例子2:
@@ -465,13 +466,14 @@
    SELECT * FROM order WHERE title like "%good%";
    SELECT * FROM order WHERE title>="good" and name<"good";
    ```
-#### 8、PHP的意思(送1分)
+#### 8 PHP的意思(送1分)
 答:PHP是一个基于服务端来创建动态网站的脚本语言，您可以用PHP和HTML生成网站主页
-#### 9、MYSQL取得当前时间的函数是?，格式化日期的函数是(2分)
+#### 9 MYSQL取得当前时间的函数是?，格式化日期的函数是(2分)
 答:now(),date()
-#### 10、实现中文字串截取无乱码的方法。(3分)
+#### 10 实现中文字串截取无乱码的方法。(3分)
+答:
 ```
-答:function GBsubstr($string, $start, $length) {
+ function GBsubstr($string, $start, $length) {
     if(strlen($string)>$length){
      $str=null;
      $len=$start+$length;
@@ -489,24 +491,24 @@
    }
 }
 ```
-#### 11、您是否用过版本控制软件? 如果有您用的版本控制软件的名字是?(1分)
-#### 12、您是否用过模板引擎? 如果有您用的模板引擎的名字是?(1分)
+#### 11 您是否用过版本控制软件? 如果有您用的版本控制软件的名字是?(1分)
+#### 12 您是否用过模板引擎? 如果有您用的模板引擎的名字是?(1分)
 答:用过,smarty
-#### 13、请简单阐述您最得意的开发之作(4分)
+#### 13 请简单阐述您最得意的开发之作(4分)
 答:信息分类
-#### 14、对于大流量的网站,您采用什么样的方法来解决访问量问题?(4分)
+#### 14 对于大流量的网站,您采用什么样的方法来解决访问量问题?(4分)
 答:确认服务器硬件是否足够支持当前的流量,数据库读写分离,优化数据表,
    程序功能规则,禁止外部的盗链,控制大文件的下载,使用不同主机分流主要流量
-#### 15、用PHP写出显示客户端IP与服务器IP的代码1分)
-```
+#### 15 用PHP写出显示客户端IP与服务器IP的代码1分)
+
 答:打印客户端IP: echo $_SERVER[‘REMOTE_ADDR’]; 或者: getenv('REMOTE_ADDR');
    打印服务器IP:echo gethostbyname("www.bolaiwu.com")
-```
-#### 16、语句include和require的区别是什么?为避免多次包含同一文件，可用(?)语句代替它们? (2分)
+
+#### 16 语句include和require的区别是什么?为避免多次包含同一文件，可用(?)语句代替它们? (2分)
 答:require->require是无条件包含也就是如果一个流程里加入require,无论条件成立与否都会先执行require  
   include->include有返回值，而require没有(可能因为如此require的速度比include快)  
   注意:包含文件不存在或者语法错误的时候require是致命的,include不是
-#### 17、如何修改SESSION的生存时间(1分).
+#### 17 如何修改SESSION的生存时间(1分).
 答:方法1:将php.ini中的session.gc_maxlifetime设置为9999重启apache
    方法2:$savePath = "./session_save_dir/";
          $lifeTime = 小时 * 秒;
@@ -514,7 +516,7 @@
          session_set_cookie_params($lifeTime);
          session_start();
    方法3:setcookie() and session_set_cookie_params($lifeTime);
-#### 18、有一个网页地址, 比如PHP开发资源网主页: http://www.phpres.com/index.html,如何得到它的内容?($1分)
+#### 18 有一个网页地址, 比如PHP开发资源网主页: http://www.phpres.com/index.html,如何得到它的内容?($1分)
 答:方法1(对于PHP5及更高版本):
    $readcontents = fopen("http://www.phpres.com/index.html", "rb");
    $contents = stream_get_contents($readcontents);
@@ -523,15 +525,15 @@
    方法2:
    echo file_get_contents("http://www.phpres.com/index.html");  
 
-#### 19、在HTTP 1.0中，状态码401的含义是(?);如果返回“找不到文件”的提示，则可用 header 函数，其语句为(?);(2分)
+#### 19 在HTTP 1.0中，状态码401的含义是(?);如果返回“找不到文件”的提示，则可用 header 函数，其语句为(?);(2分)
 答:状态401代表未被授权,header("Location:www.xxx.php");
-#### 20、在PHP中，heredoc是一种特殊的字符串，它的结束标志必须?(1分)
+#### 20 在PHP中，heredoc是一种特殊的字符串，它的结束标志必须?(1分)
 答:heredoc的语法是用"<<<"加上自己定义成对的标签，在标签范围內的文字视为一个字符串
    例子:
    $str = <<<SHOW
    my name is Jiang Qihui!
    SHOW;
-#### 21、谈谈asp,php,jsp的优缺点(1分)
+#### 21 谈谈asp,php,jsp的优缺点(1分)
 答:ASP全名Active Server Pages，是一个WEB服务器端的开发环境， 利用它可以产生和运
 行动态的、交互的、高性能的WEB服务应用程序。ASP采用脚本语言VB Script（Java script
 ）作为自己的开发语言。  
@@ -551,52 +553,53 @@ p－－Java Server Page。Jsp 可以在Serverlet和JavaBean的支持下，完成
 P、JSP 页面需要附加的语言引擎分析和执行程序代码。程序代码的执行结果被重新嵌入到  
 HTML 代码中，然后一起发送给浏览器。 ASP 、PHP、 JSP三者都是面向 Web 服务器的技术
 ，客户端浏览器不需要任何附加的软件支持。
-#### 22、谈谈对mvc的认识(1分)
+#### 22 谈谈对mvc的认识(1分)
 答:由模型(model),视图(view),控制器(controller)完成的应用程序
    由模型发出要实现的功能到控制器,控制器接收组织功能传递给视图;
-#### 23、写出发贴数最多的十个人名字的SQL，利用下表：members(id,username,posts,pass,email)(2分)
+#### 23 写出发贴数最多的十个人名字的SQL，利用下表：members(id,username,posts,pass,email)(2分)
 答:SELECT * FROM `members` ORDER BY posts DESC limit 0,10;
-#### 24. 请说明php中传值与传引用的区别。什么时候传值什么时候传引用?(2分)
+#### 24 请说明php中传值与传引用的区别。什么时候传值什么时候传引用?(2分)
 答:按值传递：函数范围内对值的任何改变在函数外部都会被忽略
    按引用传递：函数范围内对值的任何改变在函数外部也能反映出这些修改
    优缺点：按值传递时，php必须复制值。特别是对于大型的字符串和对象来说，这将会是一个代价很大的操作。
    按引用传递则不需要复制值，对于性能提高很有好处。
-#### 25. 在PHP中error_reporting这个函数有什么作用? (1分)
+#### 25 在PHP中error_reporting这个函数有什么作用? (1分)
 答:设置错误级别与错误信息回报
-#### 26. 请写一个函数验证电子邮件的格式是否正确 (2分)
+#### 26 请写一个函数验证电子邮件的格式是否正确 (2分)
+答:
 ```
-答:function checkEmail($email)
+function checkEmail($email)
   {
     $pregEmail = "/([a-z0-9]*[-_\.]?[a-z0-9]+)*@([a-z0-9]*[-_]?[a-z0-9]+)+[\.][a-z]{2,3}([\.][a-z]{2})?/i";
     return preg_match($pregEmail,$email);   
   }
 ```
-#### 27. 简述如何得到当前执行脚本路径，包括所得到参数。(2分)
+#### 27 简述如何得到当前执行脚本路径，包括所得到参数。(2分)
 答:$script_name = basename(__file__); print_r($script_name);
-#### 28、JS表单弹出对话框函数是?获得输入焦点函数是? (2分)
+#### 28 JS表单弹出对话框函数是?获得输入焦点函数是? (2分)
 答:弹出对话框: alert(),prompt(),confirm()
    获得输入焦点 focus()
-#### 29、JS的转向函数是?怎么引入一个外部JS文件?(2分)
+#### 29 JS的转向函数是?怎么引入一个外部JS文件?(2分)
 答:window.location.href,<script type="text/javascript" src="js/js_function.js"></script>
-#### 30、foo()和@foo()之间有什么区别?(1分)
+#### 30 foo()和@foo()之间有什么区别?(1分)
 答:@foo()控制错误输出
-#### 31、如何声明一个名为”myclass”的没有方法和属性的类? (1分)
+#### 31 如何声明一个名为”myclass”的没有方法和属性的类? (1分)
 答:class myclass{ }
-#### 32、如何实例化一个名为”myclass”的对象?(1分)
+#### 32 如何实例化一个名为”myclass”的对象?(1分)
 答:new myclass()
-#### 33、你如何访问和设置一个类的属性? (2分)
+#### 33 你如何访问和设置一个类的属性? (2分)
 答:$object = new myclass();
    $newstr = $object->test;
    $object->test = "info";
-#### 34、mysql_fetch_row() 和mysql_fetch_array之间有什么区别? (1分)
+#### 34 mysql_fetch_row() 和mysql_fetch_array之间有什么区别? (1分)
 答:mysql_fetch_row是从结果集取出1行数组,作为枚举
    mysql_fetch_array是从结果集取出一行数组作为关联数组,或数字数组,两者兼得
-#### 35、GD库是做什么用的? (1分)
+#### 35 GD库是做什么用的? (1分)
 答:gd库提供了一系列用来处理图片的API，使用GD库可以处理图片，或者生成图片。  
    在网站上GD库通常用来生成缩略图或者用来对图片加水印或者对网站数据生成报表。
-#### 36、指出一些在PHP输入一段HTML代码的办法。(1分)
+#### 36 指出一些在PHP输入一段HTML代码的办法。(1分)
 答:echo "<a href='index.php'>aaa</a>";
-#### 37、下面哪个函数可以打开一个文件，以对文件进行读和写操作?(1分)
+#### 37 下面哪个函数可以打开一个文件，以对文件进行读和写操作?(1分)
     (a) fget() (b) file_open() (c) fopen() (d) open_file()  [  c  ]
 #### 38 下面哪个选项没有将 john 添加到users 数组中? (1分)
 　　(a) $users[] = ‘john’;
@@ -693,9 +696,9 @@ $testnum = "123";
 　　content 文章内容
 　　category_id 文章分类id
     hits 点击量
-
-```    
-答:CREATE TABLE 'message'(
+答:
+```
+   CREATE TABLE 'message'(
    'id' int(10) NOT NULL auto_increment,
    'title' varchar(200) default NULL,
    'content' text,
@@ -713,8 +716,9 @@ $testnum = "123";
 　　文章id 文章标题 点击量 回复数量
 　　用一个SQL语句完成上述查询，如果文章没有回复则回复数量显示为0
 
+答:
 ```
-答:SELECT message.id id,message.title title,IF(message.`hits` IS NULL,0,message.`hits`) hits,
+   SELECT message.id id,message.title title,IF(message.`hits` IS NULL,0,message.`hits`) hits,
    IF(comment.`id` is NULL,0,count(*)) number FROM message LEFT JOIN  
    comment ON message.id=comment.id GROUP BY message.`id`;
 ```   
@@ -725,8 +729,9 @@ $testnum = "123";
 　　用户输入文章时，通过选择下拉菜单选定文章分类
 　　写出如何实现这个下拉菜单
 
+答:
 ```
-答:function categoryList()
+   function categoryList()
 {
     $result=mysql_query("select category_id,categroy_name from category")
             or die("Invalid query: " . mysql_error());
@@ -740,10 +745,10 @@ $testnum = "123";
 ```
 
 ### 3 编程题
-#### 1. 写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名
+#### 1 写一个函数，尽可能高效的，从一个标准 url 里取出文件的扩展名
    例如: http://www.sina.com.cn/abc/de/fg.php?id=1 需要取出 php 或 .php
-```   
 答案1:
+```
    function getExt($url){
    $arr = parse_url($url);
 
@@ -763,7 +768,7 @@ $testnum = "123";
     }
 }
 ```
-#### 2. 在 HTML 语言中，页面头部的 meta 标记可以用来输出文件的编码格式，以下是一个标准的 meta 语句
+#### 2 在 HTML 语言中，页面头部的 meta 标记可以用来输出文件的编码格式，以下是一个标准的 meta 语句
 　　请使用 PHP 语言写一个函数，把一个标准 HTML 页面中的类似 meta 标记中的 charset 部分值改为 big5
 　　请注意:
 　　1. 需要处理完整的 html 页面，即不光此 meta 语句
@@ -771,11 +776,13 @@ $testnum = "123";
     3. ' 和 " 在此处是可以互换的
     4. 'Content-Type' 两侧的引号是可以忽略的，但 'text/html; charset=gbk' 两侧的不行
 　　5. 注意处理多余空格
-#### 3. 写一个函数，算出两个文件的相对路径
+#### 3 写一个函数，算出两个文件的相对路径
 　　如 $a = '/a/b/c/d/e.php';
 　　$b = '/a/b/12/34/c.php';
 　　计算出 $b 相对于 $a 的相对路径应该是 ../../c/d将()添上
-答:function getRelativePath($a, $b) {    
+答:
+```
+    function getRelativePath($a, $b) {    
     $returnPath = array(dirname($b));    
     $arrA = explode('/', $a);    
     $arrB = explode('/', $returnPath[0]);    
@@ -792,7 +799,7 @@ $testnum = "123";
     return implode('/', $returnPath);    
    }    
    echo getRelativePath($a, $b);   
-
+```
 ### 4 填空题
 #### 1 在PHP中，当前脚本的名称(不包括路径和查询字符串)记录在预定义变量__$_SERVER['PHP_SELF']__中;而链接到当前页面的URL记录在预定义变量__$_SERVER['HTTP_REFERER']__
 中
