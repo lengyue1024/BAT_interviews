@@ -727,8 +727,7 @@ $testnum = "123";
 答: __construct , __destruct
 ````
 #### 53 完成以下:
-
-   (一)创建新闻发布系统，表名为message有如下字段 (3分)
+##### 1 创建新闻发布系统，表名为message有如下字段 (3分)
 　　id 文章id
 　　title 文章标题
 　　content 文章内容
@@ -745,8 +744,7 @@ $testnum = "123";
    PRIMARY KEY('id');
    )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```   
-
-    (二)同样上述新闻发布系统：表comment记录用户回复内容，字段如下 (4分)
+##### 2 同样上述新闻发布系统：表comment记录用户回复内容，字段如下 (4分)
 　　comment_id 回复id
 　　id 文章id，关联message表中的id
 　　comment_content 回复内容
@@ -760,8 +758,7 @@ $testnum = "123";
    IF(comment.`id` is NULL,0,count(*)) number FROM message LEFT JOIN  
    comment ON message.id=comment.id GROUP BY message.`id`;
 ```   
-
-　　(三)上述内容管理系统，表category保存分类信息，字段如下 (3分)
+##### 3 上述内容管理系统，表category保存分类信息，字段如下 (3分)
 　　category_id int(4) not null auto_increment;
 　　categroy_name varchar(40) not null;
 　　用户输入文章时，通过选择下拉菜单选定文章分类
