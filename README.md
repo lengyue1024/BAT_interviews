@@ -1,7 +1,13 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+![Platform](https://img.shields.io/badge/platform-markdown-red.svg)
+[![License](https://img.shields.io/badge/license-CC%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
+[![contributions](https://img.shields.io/badge/contributions-welcome-green.svg)](https://github.com/lengyue1024/BAT_interviews#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0) 
 **Table of Contents**
 
-   * [机器学习](#机器学习)  
+# 机器学习
+   * [机器学习](#机器学习)
+
 # Linux程序设计
    * [2 shell程序设计](#2-shell程序设计)
       * [1 什么使shell](1-什么是shell)
