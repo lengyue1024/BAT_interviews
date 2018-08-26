@@ -10,8 +10,7 @@
 
 **Table of Contents**
 # 机器学习
-
-   * [[机器学习](#机器学习)](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
+- [机器学习](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
 
 # Linux程序设计
    * [2 shell程序设计](#2-shell程序设计)
