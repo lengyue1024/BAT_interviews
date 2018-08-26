@@ -1,6 +1,8 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **联系我**:  
-[QQ](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)  |  [Email](xzhxpx@qq.com)  |   [Blog](https://www.bingyublog.com)   ![Platform](https://img.shields.io/badge/platform-markdown-red.svg)
+[QQ](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)  |  [Email](xzhxpx@qq.com)  |   [Blog](https://www.bingyublog.com)   
+
+![Platform](https://img.shields.io/badge/platform-markdown-red.svg)
 [![License](https://img.shields.io/badge/license-CC%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 ![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
 [![contributions](https://img.shields.io/badge/contributions-welcome-green.svg)](https://github.com/lengyue1024/BAT_interviews#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)  
