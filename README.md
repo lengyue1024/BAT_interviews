@@ -2,8 +2,8 @@
 **联系我**:  
 [QQ](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)  |  [Email](xzhxpx@qq.com)  |   [Blog](https://www.bingyublog.com)   
 
-[![GitHub stars][https://img.shields.io/github/stars/52cik/github-hans.svg]][https://github.com/lengyue1024/BAT_interviews/stargazers]  
-[![GitHub forks][https://img.shields.io/github/forks/52cik/github-hans.svg]][https://github.com/lengyue1024/BAT_interviews/network/members]
+[![https://img.shields.io/github/stars/52cik/github-hans.svg]][https://github.com/lengyue1024/BAT_interviews/stargazers]  
+[![https://img.shields.io/github/forks/52cik/github-hans.svg]][https://github.com/lengyue1024/BAT_interviews/network/members]
 ![Platform](https://img.shields.io/badge/platform-markdown-red.svg)
 [![License](https://img.shields.io/badge/license-CC%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 ![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
