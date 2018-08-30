@@ -3,7 +3,7 @@
 [QQ](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)  |  [Email](xzhxpx@qq.com)  |   [Blog](https://www.bingyublog.com)  
 
 [![GitHub stars](https://img.shields.io/github/stars/lengyue1024/BAT_interviews
-.svg)](https://github.com/lengyue1024/BAT_interviews/stargazers)  
+.svg)](https://github.com/lengyue1024/BAT_interviews/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lengyue1024/BAT_interviews
 .svg)](https://github.com/lengyue1024/BAT_interviews/network/members)
 ![Platform](https://img.shields.io/badge/platform-markdown-red.svg)
