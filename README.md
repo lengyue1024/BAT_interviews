@@ -1,5 +1,5 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-<img align="right" height="150" src="https://ws1.sinaimg.cn/large/006DGX4tly1fv83fz1l6cg30fk0bo4qr.gif">
+<img align="right" height="150" src="./image/码农.gif">
 
 # BAT_interviews
 
