@@ -18,6 +18,9 @@
 >:loudspeaker: 这是一个我个人在网上收集的BAT面试题集合(也许并不仅仅限于BAT)，仅供大家学习。因为只有我一个人在收集、整理，所以哪里有不足请转到[Issues](https://github.com/lengyue1024/BAT_interviews/issues)反馈给我，我会及时调整，谢谢！
 
 **Table of Contents**
+# 小米网络运维工程师笔试真题
+- [](./小米网络运维工程师笔试真题.md)
+
 # 机器学习
 - [机器学习](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
 
