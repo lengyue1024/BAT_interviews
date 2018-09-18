@@ -19,7 +19,7 @@
 
 **Table of Contents**
 # 小米网络运维工程师笔试真题
-- [](./小米网络运维工程师笔试真题.md)
+- [小米网络运维工程师笔试真题](https://github.com/lengyue1024/BAT_interviews/blob/master/%E5%B0%8F%E7%B1%B3%E7%BD%91%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98.md)
 
 # 机器学习
 - [机器学习](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
