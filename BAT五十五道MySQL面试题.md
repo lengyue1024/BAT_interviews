@@ -161,8 +161,9 @@ Ado.net5.mxj
 ### 18、如何使用Unix shell登录Mysql？
 
 我们可以通过以下命令登录：
-
+``` sql
 # [mysql dir]/bin/mysql -h hostname -u -p
+```
 
 ### 19、 myisamchk是用来做什么的？
 
@@ -303,17 +304,18 @@ BLOB和TEXT类型之间的唯一区别在于对BLOB值进行排序和比较时�
 
 以下是mysql_fetch_array和mysql_fetch_object的区别：
 
-mysql_fetch_array（） - 将结果行作为关联数组或来自数据库的常规数组返回。
+- mysql_fetch_array（） - 将结果行作为关联数组或来自数据库的常规数组返回。
 
-mysql_fetch_object - 从数据库返回结果行作为对象。
+- mysql_fetch_object - 从数据库返回结果行作为对象。
 
 ### 36、我们如何在mysql中运行批处理模式？
 
 以下命令用于在批处理模式下运行：
-
+``` sql
 mysql;
 
 mysql mysql.out
+```
 
 ### 37、MyISAM表格将在哪里存储，并且还提供其存储格式？
 
@@ -328,7 +330,7 @@ mysql mysql.out
 ### 38、Mysql中有哪些不同的表格？
 
 共有5种类型的表格：
-
+```
 MyISAM
 
 Heap
@@ -338,6 +340,7 @@ Merge
 INNODB
 
 ISAM
+```
 
 MyISAM是Mysql的默认存储引擎。
 
@@ -365,10 +368,11 @@ SELECT DISTINCT t1.a FROM t1,t2 where t1.a=t2.a;
 ### 43、如何显示前50行？
 
 在Mysql中，使用以下代码查询显示前50行：
-
+``` sql
 SELECT*FROM
 
 LIMIT 0,50;
+```
 
 ### 44、可以使用多少列创建索引？
 
@@ -423,7 +427,7 @@ AFTER DELETE
 ### 48、什么是非标准字符串类型？
 
 以下是非标准字符串类型：
-
+```
 TINYTEXT
 
 TEXT
@@ -431,9 +435,11 @@ TEXT
 MEDIUMTEXT
 
 LONGTEXT
+```
 
 ### 49、什么是通用SQL函数？
 
+```
 CONCAT(A, B) - 连接两个字符串值以创建单个字符串输出。通常用于将两个或多个字段合并为一个字段。
 
 FORMAT(X, D)- 格式化数字X到D有效数字。
@@ -451,6 +457,7 @@ DATEDIFF（A，B） - 确定两个日期之间的差异，通常用于计算年�
 SUBTIMES（A，B） - 确定两次之间的差异。
 
 FROMDAYS（INT） - 将整数天数转换为日期值。
+```
 
 ### 50、解释访问控制列表
 
@@ -519,6 +526,6 @@ Mysql服务器通过权限表来控制用户对数据库的访问，权限表存
 
 MyISAM支持表锁，InnoDB支持表锁和行锁，默认为行锁。
 
-表级锁：开销小，加锁快，不会出现死锁。锁定粒度大，发生锁冲突的概率最高，并发量最低
+- 表级锁：开销小，加锁快，不会出现死锁。锁定粒度大，发生锁冲突的概率最高，并发量最低
 
-行级锁：开销大，加锁慢，会出现死锁。锁力度小，发生锁冲突的概率小，并发度最高
+- 行级锁：开销大，加锁慢，会出现死锁。锁力度小，发生锁冲突的概率小，并发度最高
