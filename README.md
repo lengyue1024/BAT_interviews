@@ -6,9 +6,9 @@
 <p align="center">
 <a href="https://github.com/lengyue1024/BAT_interviews/stargazers"><img src="https://img.shields.io/github/stars/lengyue1024/BAT_interviews.svg"/></a>
 <a href="https://github.com/lengyue1024/BAT_interviews/network/members"><img src="https://img.shields.io/github/forks/lengyue1024/BAT_interviews.svg"/></a>
-<a href=""><img src="https://img.shields.io/badge/platform-markdown-red.svg"/></a>
-<a href=""><img src=""/></a>
-<a href=""><img src=""/></a>
+<a href="https://guides.github.com/features/mastering-markdown/"><img src="https://img.shields.io/badge/platform-markdown-red.svg"/></a>
+<a href="Platform"><img src="https://img.shields.io/badge/platform-markdown-red.svg"/></a>
+<a href="https://github.com/lengyue1024/BAT_interviews/pulls"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"/></a>
 </p>
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端),持续更新ing...**
