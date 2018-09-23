@@ -56,6 +56,21 @@ read committed：脏读，不可重复读
 repeatable read：可重读
 
 serializable ：串行事物
+详细解释如下：
+Read Uncommitted（读取未提交内容）
+在该隔离级别，所有事务都可以看到其他未提交事务的执行结果。本隔离级别很少用于实际应用，因为它的性能也不比其他级别好多少。读取未提交的数据，也被称之为脏读（Dirty Read）。
+Read Committed（读取提交内容）
+这是大多数数据库系统的默认隔离级别（但不是MySQL默认的）。它满足了隔离的简单定义：一个事务只能看见已经提交事务所做的改变。这种隔离级别也支持所谓的不可重复读（Nonrepeatable Read），因为同一事务的其他实例在该实例处理其间可能会有新的commit，所以同一select可能返回不同结果。
+Repeatable Read（可重读）
+这是MySQL的默认事务隔离级别，它确保同一事务的多个实例在并发读取数据时，会看到同样的数据行。不过理论上，这会导致另一个棘手的问题：幻读（Phantom Read）。简单的说，幻读指当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，会发现有新的“幻影” 行。InnoDB和Falcon存储引擎通过多版本并发控制（MVCC，Multiversion Concurrency Control 间隙锁）机制解决了该问题。注：其实多版本只是解决不可重复读问题，而加上间隙锁（也就是它这里所谓的并发控制）才解决了幻读问题。
+Serializable（可串行化）
+这是最高的隔离级别，它通过强制事务排序，使之不可能相互冲突，从而解决幻读问题。简言之，它是在每个读的数据行上加上共享锁。在这个级别，可能导致大量的超时现象和锁竞争。
+对于不同的事务，采用不同的隔离级别分别有不同的结果。不同的隔离级别有不同的现象。主要有下面3种现在：
+1、脏读（dirty read）：一个事务可以读取另一个尚未提交事务的修改数据。
+2、非重复读（nonrepeatable read）：在同一个事务中，同一个查询在T1时间读取某一行，在T2时间重新读取这一行时候，这一行的数据已经发生修改，可能被更新了（update），也可能被删除了（delete）。
+3、幻像读（phantom read）：在同一事务中，同一查询多次进行时候，由于其他插入操作（insert）的事务提交，导致每次返回不同的结果集。
+不同的隔离级别有不同的现象，并有不同的锁定/并发机制，隔离级别越高，数据库的并发性就越差，4种事务隔离级别分别表现的现象如下表：
+![](https://ws1.sinaimg.cn/large/006DGX4tly1fvjufj9m9gj30h704it8n.jpg)
 
 ### 9、在Mysql中ENUM的用法是什么？
 
@@ -155,7 +170,20 @@ Ado.net5.mxj
 
 ### 20、MYSQL数据库服务器性能分析的方法命令有哪些?
 
--
+Show status
+一些值得监控的变量值：
+Bytes_received和Bytes_sent
+和服务器之间来往的流量。
+Com_*服务器正在执行的命令。
+Created_*在查询执行期限间创建的临时表和文件。
+Handler_*存储引擎操作。
+Select_*不同类型的联接执行计划。
+Sort_*几种排序信息。
+Show session status like ‘Select’;
+Show profiles
+SET profiling=1;
+Show profiles \G
+Show profile;
 
 ### 21、如何控制HEAP表的最大尺寸？
 
