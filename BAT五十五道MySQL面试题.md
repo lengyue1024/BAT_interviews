@@ -171,18 +171,31 @@ Ado.net5.mxj
 ### 20、MYSQL数据库服务器性能分析的方法命令有哪些?
 
 Show status
+
 一些值得监控的变量值：
+
 Bytes_received和Bytes_sent
+
 和服务器之间来往的流量。
+
 Com_*服务器正在执行的命令。
+
 Created_*在查询执行期限间创建的临时表和文件。
+
 Handler_*存储引擎操作。
+
 Select_*不同类型的联接执行计划。
+
 Sort_*几种排序信息。
+
 Show session status like ‘Select’;
+
 Show profiles
+
 SET profiling=1;
+
 Show profiles \G
+
 Show profile;
 
 ### 21、如何控制HEAP表的最大尺寸？
