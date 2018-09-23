@@ -9,7 +9,6 @@
 ![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
 [![contributions](https://img.shields.io/badge/contributions-welcome-green.svg)](https://github.com/lengyue1024/BAT_interviews/pulls)  
 
-
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端),持续更新ing...**
 
 **联系我**:  
