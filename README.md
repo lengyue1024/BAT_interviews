@@ -24,6 +24,9 @@
 # 网易Linux运维工程师面试题
 - [网易Linux运维工程师面试题](https://github.com/lengyue1024/BAT_interviews/blob/master/%E7%BD%91%E6%98%93Linux%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88.md)
 
+# Redis
+- [Redis](https://github.com/lengyue1024/BAT_interviews/blob/master/Redis.md)
+
 # MySQL
 - [MySQL](https://github.com/lengyue1024/BAT_interviews/blob/master/BAT%E4%BA%94%E5%8D%81%E4%BA%94%E9%81%93MySQL%E9%9D%A2%E8%AF%95%E9%A2%98.md)
 
