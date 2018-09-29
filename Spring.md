@@ -18,49 +18,49 @@ Spring 是个java企业级应用的开源开发框架。Spring主要用来开发
 
 ### 2. 使用Spring框架的好处是什么？
 
-轻量：Spring 是轻量的，基本的版本大约2MB。
+- 轻量：Spring 是轻量的，基本的版本大约2MB。
 
-控制反转：Spring通过控制反转实现了松散耦合，对象们给出它们的依赖，而不是创建或查找依赖的对象们。
+- 控制反转：Spring通过控制反转实现了松散耦合，对象们给出它们的依赖，而不是创建或查找依赖的对象们。
 
-面向切面的编程(AOP)：Spring支持面向切面的编程，并且把应用业务逻辑和系统服务分开。
+- 面向切面的编程(AOP)：Spring支持面向切面的编程，并且把应用业务逻辑和系统服务分开。
 
-容器：Spring 包含并管理应用中对象的生命周期和配置。
+- 容器：Spring 包含并管理应用中对象的生命周期和配置。
 
-MVC框架：Spring的WEB框架是个精心设计的框架，是Web框架的一个很好的替代品。
+- MVC框架：Spring的WEB框架是个精心设计的框架，是Web框架的一个很好的替代品。
 
-事务管理：Spring 提供一个持续的事务管理接口，可以扩展到上至本地事务下至全局事务（JTA）。
+- 事务管理：Spring 提供一个持续的事务管理接口，可以扩展到上至本地事务下至全局事务（JTA）。
 
-异常处理：Spring 提供方便的API把具体技术相关的异常（比如由JDBC，Hibernate or JDO抛出的）转化为一致的unchecked 异常。
+- 异常处理：Spring 提供方便的API把具体技术相关的异常（比如由JDBC，Hibernate or JDO抛出的）转化为一致的unchecked 异常。
 
 ### 3.  Spring由哪些模块组成?
 
 以下是Spring 框架的基本模块：
 
-Core module
+- Core module
 
-Bean module
+- Bean module
 
-Context module
+- Context module
 
-Expression Language module
+- Expression Language module
 
-JDBC module
+- JDBC module
 
-ORM module
+- ORM module
 
-OXM module
+- OXM module
 
-Java Messaging Service(JMS) module
+- Java Messaging Service(JMS) module
 
-Transaction module
+- Transaction module
 
-Web module
+- Web module
 
-Web-Servlet module
+- Web-Servlet module
 
-Web-Struts module
+- Web-Struts module
 
-Web-Portlet module
+- Web-Portlet module
 
 ### 4. 核心容器（应用上下文) 模块。
 
