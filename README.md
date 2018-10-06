@@ -4456,3 +4456,7 @@ d. 做好的页面结构，页面重构和用户体验；
 e. 处理hack，兼容、写出优美的代码格式；
 
 f. 针对服务器的优化、拥抱最新前端技术。
+
+<div id="fixedTools" class="hidden-xs hidden-sm">
+    <a id="backtop" class="hidden border-bottom" href="#">回顶部</a>
+</div>
