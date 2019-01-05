@@ -8,11 +8,17 @@
 [![Platform](https://img.shields.io/badge/platform-markdown-red.svg)](https://guides.github.com/features/mastering-markdown/)  [![License](https://wangchujiang.com/sb/license/mit.svg)](https://github.com/lengyue1024/BAT_interviews/blob/master/LICENSE)
 ![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
 [![contributions](https://img.shields.io/badge/contributions-welcome-green.svg)](https://github.com/lengyue1024/BAT_interviews/pulls)  
->**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端),持续更新ing...**
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lengyue1024/BAT_interviews.svg)](http://isitmaintained.com/project/lengyue1024/BAT_interviews "Average time to resolve an issue")  
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/lengyue1024/BAT_interviews.svg)](http://isitmaintained.com/project/lengyue1024/BAT_interviews "Percentage of issues still open")
+
+>**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端...),持续更新ing...**
 
 **联系我**:  
 
-[![](https://wangchujiang.com/sb/ico/qq.svg)](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes) [![](https://wangchujiang.com/sb/ico/group.svg)](https://jq.qq.com/?_wv=1027&k=5MttUBq) [![](https://wangchujiang.com/sb/ico/linux.svg)](https://www.bingyublog.com) [![](https://wangchujiang.com/sb/ico/email.svg)](mailto:xzhxpx@qq.com)
+[![facebook](https://wangchujiang.com/sb/ico/facebook.svg)](https://www.facebook.com/ibingyu)
+[![qq](https://wangchujiang.com/sb/ico/qq.svg)](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes) [![qq-group](https://wangchujiang.com/sb/ico/group.svg)](https://jq.qq.com/?_wv=1027&k=5MttUBq) [![blog](https://wangchujiang.com/sb/ico/linux.svg)](https://www.bingyublog.com) [![email](https://wangchujiang.com/sb/ico/email.svg)](mailto:xzhxpx@qq.com)
+[![weibo](https://wangchujiang.com/sb/ico/weibo.svg)]((https://weibo.com/u/6083310945))
+[![gitter](https://wangchujiang.com/sb/ico/gitter.svg)](https://gitter.im/bingyux/Lobby)
 
 >:loudspeaker: 这是一个我个人在网上收集的BAT面试题集合(也许并不仅仅限于BAT)，仅供大家学习。因为只有我一个人在收集、整理，所以哪里有不足请转到[Issues](https://github.com/lengyue1024/BAT_interviews/issues)反馈给我，我会及时调整，谢谢！
 
