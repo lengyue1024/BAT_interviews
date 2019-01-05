@@ -5,11 +5,12 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/lengyue1024/BAT_interviews.svg)](https://github.com/lengyue1024/BAT_interviews/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lengyue1024/BAT_interviews.svg)](https://github.com/lengyue1024/BAT_interviews/network/members)
-[![Platform](https://img.shields.io/badge/platform-markdown-red.svg)](https://guides.github.com/features/mastering-markdown/)  [![License](https://wangchujiang.com/sb/license/mit.svg)](https://github.com/lengyue1024/BAT_interviews/blob/master/LICENSE)
+[![Platform](https://img.shields.io/badge/platform-markdown-red.svg)](https://guides.github.com/features/mastering-markdown/)
 ![progress](https://img.shields.io/badge/progress-developing-yellow.svg)
 [![contributions](https://img.shields.io/badge/contributions-welcome-green.svg)](https://github.com/lengyue1024/BAT_interviews/pulls)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lengyue1024/BAT_interviews.svg)](http://isitmaintained.com/project/lengyue1024/BAT_interviews "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/lengyue1024/BAT_interviews.svg)](http://isitmaintained.com/project/lengyue1024/BAT_interviews "Percentage of issues still open")
+[![License](https://wangchujiang.com/sb/license/mit.svg)](https://github.com/lengyue1024/BAT_interviews/blob/master/LICENSE)
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
