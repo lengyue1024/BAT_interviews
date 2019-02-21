@@ -443,7 +443,7 @@ $(document).ready(function () {
     const mill_sec_one_day = 24 * 3600 * 1000;
 
     var query = parse_query(window.location.search);
-    var q = is_empty(query['q']) ? 'pingao777/markdown-preview-sync' : query['q'];
+    var q = is_empty(query['q']) ? 'lengyue1024/BAT_interviews' : query['q'];
 
     var render_issue_chart = function (q) {
         var repo_url = 'https://api.github.com/repos/' + q
