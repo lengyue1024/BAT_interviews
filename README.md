@@ -1,4 +1,5 @@
 <div align=center><img src="stargazers-trend.png" alt="stargazers-trend" /></div>
+
 原项目地址: <https://github.com/pingao777/github-gazer>  
 本项目地址: <https://www.bingyublog.com/BAT_interviews/>  
 - 我本人在没有破坏原项目整体样式的情况下，做了简单的样式修改。
