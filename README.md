@@ -1,9 +1,8 @@
-## Witness repository stargazers trend and activity | github-gazer
+原项目地址: <https://github.com/pingao777/github-gazer>  |  本项目地址: <https://www.bingyublog.com/BAT_interviews/>  
+>
+- 我本人在没有破坏原项目整体样式的情况下，做了简单的样式修改。
+- 为了保证原有项目的完整性，并且出于对该项目作者的尊敬，并没有太多的修改本项目。
 
-Just do it like this: `https://pingao777.github.io/github-gazer/?q=user/repo`, e.g. for repository `pingao777/markdown-preview-sync`, visit [https://pingao777.github.io/github-gazer/?q=pingao777/markdown-preview-sync](https://pingao777.github.io/github-gazer/?q=pingao777/markdown-preview-sync), below is the snapshot:
+该网页集成了BAT_interviews的star趋势，star、fork、watch的比例，关注本人和我关注的人的数量统计，以及BAT_interviews项目的提交记录。
 
-![github-gazer](http://wocanmei-hexo.nos-eastchina1.126.net/github-gazer/github-gazer-2.png)
-
-**Let the world witness the history of your repository!**
-
-修改为view on GitHub
+- 希望更多人可以关注并且向本项目提交PR.
