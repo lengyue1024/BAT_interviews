@@ -1,5 +1,5 @@
 <div align=center><img src="stargazers-trend.png" alt="stargazers-trend" /></div>
-<div align=center><a>该图片截取于2019/2/21</a></div>
+<div align=center><a>「该图片截取于2019/2/21」</a></div>
 
 原项目地址: <https://github.com/pingao777/github-gazer>  
 本项目地址: <https://www.bingyublog.com/BAT_interviews/>  
