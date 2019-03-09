@@ -72,7 +72,20 @@
 
 ## :christmas_tree:Sponsoring | 赞助
 
-<table><tr><td><center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><span class="badge tip top" data-v-099ab69c>微信</span></center></td> <td><center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg"><br><span class="badge tip top" data-v-099ab69c>支付宝</span></center></td></tr></table>
+<table>
+<tr>
+<td>
+<center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><strong>微信</strong>
+</center>
+</td>
+<td>
+<center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg">
+<br>
+<strong>支付宝</strong>
+</center>
+</td>
+</tr>
+</table>
 
 
 <a href="#"><img align="right" src="image/rocket.svg" title="回到顶部" border="0"></a>
