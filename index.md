@@ -75,7 +75,7 @@
 <table>
 <tr>
 <td>
-<center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><strong>微信</strong>
+<center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><center><strong>微信</strong></center>
 </center>
 </td>
 <td>
