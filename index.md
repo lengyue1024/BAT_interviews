@@ -1,7 +1,7 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 <img align="right" height="150" src="./image/码农.gif">
 
-# BAT_interviews
+# :memo:BAT_interviews
 
 [![GitHub stars](https://img.shields.io/github/stars/lengyue1024/BAT_interviews.svg)](https://github.com/lengyue1024/BAT_interviews/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lengyue1024/BAT_interviews.svg)](https://github.com/lengyue1024/BAT_interviews/network/members)
@@ -14,8 +14,6 @@
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
----
-
 **联系我**:  
 
 [![facebook](https://wangchujiang.com/sb/ico/facebook.svg)](https://www.facebook.com/ibingyu)
@@ -27,7 +25,9 @@
 
 >:loudspeaker: 这是一个我个人在网上收集的BAT面试题集合(也许并不仅仅限于BAT)，仅供大家学习。因为只有我一个人在收集、整理，所以哪里有不足请转到[Issues](https://github.com/lengyue1024/BAT_interviews/issues)反馈给我，我会及时调整，谢谢！
 
-## Table of Contents | 目录
+---
+
+## :file_folder:Table of Contents | 目录
 
 ```
 ├─ 阿里巴巴校招笔试试卷
@@ -60,7 +60,7 @@
 ### 机器学习
 - [机器学习](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
 
-## ChangeLog | 更新日志
+## :art:ChangeLog | 更新日志
 
 按照技术的使用频率上下排序，目录结构/表格
 
