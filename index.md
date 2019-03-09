@@ -43,10 +43,10 @@
 ```
 
 ### 小米网络运维工程师面试真题
-- [小米网络运维工程师笔试真题](https://github.com/lengyue1024/BAT_interviews/blob/master/%E5%B0%8F%E7%B1%B3%E7%BD%91%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%AC%94%E8%AF%95%E7%9C%9F%E9%A2%98.md)
+- [小米网络运维工程师笔试真题](小米网络运维工程师笔试真题.md)
 
 ## 网易Linux运维工程师面试题
-- [网易Linux运维工程师面试题](https://github.com/lengyue1024/BAT_interviews/blob/master/%E7%BD%91%E6%98%93Linux%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88.md)
+- [网易Linux运维工程师面试题](网易Linux运维工程师面试题.md)
 
 ### Spring
 - [Spring](Spring.md)
@@ -86,5 +86,9 @@
 </tr>
 </table>
 
+## License | 许可
+⚖ 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
+
+⚖ 本文档采用[创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
 
 <a href="#"><img align="right" src="image/rocket.svg" title="回到顶部" border="0"></a>
