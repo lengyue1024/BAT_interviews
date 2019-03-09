@@ -78,12 +78,14 @@
 <center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><center><strong>微信</strong></center>
 </center>
 </td>
+<center>
 <td>
-<center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg">
+<img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg">
 <br>
 <strong>支付宝</strong>
-</center>
+
 </td>
+</center>
 </tr>
 </table>
 
