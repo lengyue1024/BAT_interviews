@@ -68,8 +68,11 @@
 
 ## :space_invader:Contributor | 贡献者
 
-<a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="70px"></a>
+<a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
 
-## Sponsoring | 赞助
+## :christmas_tree:Sponsoring | 赞助
+
+<table><tr><td><center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><span class="badge tip top" data-v-099ab69c>微信</span></center></td> <td><center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg"><br><span class="badge tip top" data-v-099ab69c>支付宝</span></center></td></tr></table>
+
 
 <a href="#"><img align="right" src="image/rocket.svg" title="回到顶部" border="0"></a>
