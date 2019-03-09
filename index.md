@@ -77,13 +77,13 @@
 <td>
 <center><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"></center><br><strong><center>微信</center></strong>
 </td>
-<center>
 <td>
+<center>
 <img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg">
 <br>
 <strong>支付宝</strong>
-</td>
 </center>
+</td>
 </tr>
 </table>
 
