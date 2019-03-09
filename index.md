@@ -68,9 +68,8 @@
 
 ## :space_invader:Contributor | 贡献者
 
-<a href="https://github.com/lengyue1024">
-​    <img src="https://avatars1.githubusercontent.com/u/36565884?s=460&v=4" width="50px">
-</a>
+<a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="50px"></a>
 
+## Sponsoring | 赞助
 
 <a href="#"><img align="right" src="image/rocket.svg" title="回到顶部" border="0"></a>
