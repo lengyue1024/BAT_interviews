@@ -33,7 +33,7 @@
 ├─ 阿里巴巴校招笔试试卷
 ├─ BAT五十五道MySQL面试题.md
 ├─ LICENSE
-├─ [README.md](README.md)
+├─ README.md
 ├─ Redis.md
 ├─ Spring.md
 ├─ index.md
@@ -63,3 +63,7 @@
 ## ChangeLog | 更新日志
 
 按照技术的使用频率上下排序，目录结构/表格
+
+1. 2019/3/9 ：重置README文件
+
+<a id="backtop" class="hidden border-bottom" href="#"><img src="image/rocket.svg" title="回到顶部" align="right border="0"></a>
