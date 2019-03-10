@@ -43,10 +43,25 @@
 └─ 网易Linux运维工程师.md
 ```
 
+### Python面试题及答案
+- [Python面试题及答案](Python面试题及答案.md)
+
+### Java面试题及答案
+- [Java面试题及答案](Java面试题及答案.md)
+
+### PHP面试题及答案
+- [PHP面试题及答案](PHP面试题及答案.md)
+
+### 前端面试题及答案
+- [前端面试题及答案](前端面试题及答案.md)
+
+### 大数据面试题及答案
+- [大数据面试题及答案](大数据面试题及答案.md)
+
 ### 小米网络运维工程师面试真题
 - [小米网络运维工程师笔试真题](小米网络运维工程师笔试真题.md)
 
-## 网易Linux运维工程师面试题
+### 网易Linux运维工程师面试题
 - [网易Linux运维工程师面试题](网易Linux运维工程师面试题.md)
 
 ### Spring
@@ -55,11 +70,13 @@
 ### Redis
 - [Redis](Redis.md)
 
-### MySQL
-- [MySQL](https://github.com/lengyue1024/BAT_interviews/blob/master/BAT%E4%BA%94%E5%8D%81%E4%BA%94%E9%81%93MySQL%E9%9D%A2%E8%AF%95%E9%A2%98.md)
+### MySQL面试题及答案
+- [MySQL面试题及答案](BAT五十五道MySQL面试题.md)
 
 ### 机器学习
-- [机器学习](https://github.com/lengyue1024/BAT_interviews/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.md)
+- [机器学习](机器学习.md)
+
+---
 
 ## :art:ChangeLog | 更新日志
 
