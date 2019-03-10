@@ -14,7 +14,7 @@
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
-**联系我**:  
+## :email:联系我:  
 
 [![facebook](https://wangchujiang.com/sb/ico/facebook.svg)](https://www.facebook.com/ibingyu)
 [![qq](https://wangchujiang.com/sb/ico/qq.svg)](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)
@@ -70,7 +70,7 @@
 
 <a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
 
-## :christmas_tree:Sponsoring | 赞助
+## :dollar::credit_card::euro:Sponsoring | 赞助
 
 <table>
 <tr>
@@ -87,9 +87,9 @@
 </table>
 
 ## :paperclip:License | 许可
-⚖ 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
+⚖ :bookmark:本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
 
-⚖ 本文档采用[创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
+⚖ :wind_chime:本文档采用[创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
 
 
 ⚖💵💴💶💷💰💳🔖🎁📌🔍🔎⚙🎮🍭
