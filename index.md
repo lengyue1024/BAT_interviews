@@ -68,7 +68,7 @@
 1. 2019/3/9 ：重置README文件
 
 
-## :pushpin:Contributing 贡献
+## :pushpin:Contributing | 贡献
 ### 🐱‍🏍Contributor | 贡献者
 
 <a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
