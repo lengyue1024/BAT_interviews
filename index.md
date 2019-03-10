@@ -66,11 +66,11 @@
 
 1. 2019/3/9 ：重置README文件
 
-## :space_invader:Contributor | 贡献者
+## 🐱‍🏍Contributor | 贡献者
 
 <a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
 
-## :dollar::credit_card::euro:Sponsoring | 赞助
+## :dollar:Sponsoring | 赞助
 
 <table>
 <tr>
