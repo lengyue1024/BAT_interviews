@@ -14,7 +14,7 @@
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
-## :email:联系我:  
+## :email:Contact | 联系我:  
 
 [![facebook](https://wangchujiang.com/sb/ico/facebook.svg)](https://www.facebook.com/ibingyu)
 [![qq](https://wangchujiang.com/sb/ico/qq.svg)](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)
@@ -29,7 +29,7 @@
 
 ## :file_folder:Table of Contents | 目录
 
-### :wind_chime:目录结构
+### :wind_chime:Structure of Contents | 目录结构
 ```
 ├─ 阿里巴巴校招笔试试卷
 ├─ BAT五十五道MySQL面试题.md
@@ -67,9 +67,15 @@
 
 1. 2019/3/9 ：重置README文件
 
-## 🐱‍🏍Contributor | 贡献者
+
+## Contributing 贡献
+### 🐱‍🏍Contributor | 贡献者
 
 <a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
+### How to contribute | 贡献规范
+目前来讲，仍然有很多地方需要完善，希望有经验并心怀开源精神的同学前来帮我共同完善本项目,并且欢迎提交PR和issue。
+
+在你着手准备给这个项目提交一些新内容前，我建议你务必阅读这份「[中文技术文档写作规范](https://github.com/ruanyf/document-style-guide)」和 「[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)」
 
 ## :lollipop:Sponsoring | 赞助
 
@@ -88,11 +94,7 @@
 </table>
 
 ## :bookmark:License | 许可
->⚖ 本作品采用[「知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议」](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。  
-⚖ 本文档采用[「创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款」](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
-
-
-⚖💵💴💶💷💰💳🔖🎁📌🔍🔎⚙🎮🍭
-
+>⚖ 本作品采用『[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议」](http://creativecommons.org/licenses/by-nc-sa/4.0/)』进行许可。  
+⚖ 本文档采用『[创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款」](http://creativecommons.org/licenses/by-nc-sa/4.0/)』进行授权。
 
 <a href="#"><img align="right" src="image/rocket.svg" title="回到顶部" border="0"></a>
