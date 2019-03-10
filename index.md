@@ -69,7 +69,7 @@
 
 ## 🐱‍🏍Contributor | 贡献者
 
-<a href="https://github.com/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
+<a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
 
 ## :lollipop:Sponsoring | 赞助
 
