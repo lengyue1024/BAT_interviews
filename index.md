@@ -88,9 +88,9 @@
 </table>
 
 ## :bookmark:License | 许可
-⚖ 本作品采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
+⚖ 本作品采用[「知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议」](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
 
-⚖ 本文档采用[创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
+⚖ 本文档采用[「创用 CC 姓名标识-非商业性-相同方式分享 4.0 国际 授权条款」](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行授权。
 
 
 ⚖💵💴💶💷💰💳🔖🎁📌🔍🔎⚙🎮🍭
