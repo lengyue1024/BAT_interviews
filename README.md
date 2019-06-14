@@ -122,8 +122,8 @@
 
 <table>
 <tr>
-<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg" height="64" /></a></td>
-<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg" height="64" /></a></td>
+<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg" /></a></td>
+<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg" /></a></td>
 </tr>
 <tr>
 <td align="center">微信</td>
