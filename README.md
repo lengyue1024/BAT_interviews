@@ -101,7 +101,7 @@
 
 
 <table>
-  <td><center><a href="https://sourcerer.io/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" alt="Contributor" /></a></center></td>
+  <td><center><a href="https://sourcerer.io/lengyue1024"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="100px" height="100px" alt="Contributor" /></a></center></td>
   <td><center><a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://ghchart.rshah.org/409ba5/lengyue1024" alt="bingyu's Github Chart" /></a></center></td>
 </table>
 
