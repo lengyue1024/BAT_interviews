@@ -32,7 +32,7 @@
 ### :wind_chime:Structure of Contents | 目录结构
 ```
 .
-├─ Python面试题及答案.md ![](assets/markdown.svg)
+├─ Python面试题及答案.md
 ├─ Java面试题及答案.md
 ├─ Linux面试题及答案.md
 ├─ PHP面试题及答案.md
@@ -47,7 +47,7 @@
 └─ 阿里巴巴校招笔试试卷
 ```
 
-### Python面试题及答案 ![](assets/makedown.svg)
+### Python面试题及答案 ![](assets/markdown.svg)
 - [Python面试题及答案](Python面试题及答案.md)
 
 ### Java面试题及答案
