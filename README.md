@@ -32,7 +32,7 @@
 ### :wind_chime:Structure of Contents | 目录结构
 ```
 .
-├─ Python面试题及答案.md <img src="assets/makedown.svg">
+├─ Python面试题及答案.md ![](assets/markdown.svg)
 ├─ Java面试题及答案.md
 ├─ Linux面试题及答案.md
 ├─ PHP面试题及答案.md
