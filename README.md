@@ -99,6 +99,13 @@
 ### 🐱‍🏍Contributor | 贡献者
 
 
+
+<table>
+  <td><center><a href="https://sourcerer.io/lengyue1024"><img src="./.vuepress/public/bingyu.jpg" width="100px" height="100px" alt="Contributor" /></a></center></td>
+  <td><center><a href="https://github.com/octocatHub/octocathub.github.io/graphs/contributors"><img src="https://ghchart.rshah.org/409ba5/lengyue1024" alt="bingyu's Github Chart" /></a></center></td>
+</table>
+
+
 <table>
 <tr>
 <td align="center"><a href="https://crisp.chat/"><img src="https://valeriansaliou.github.io/sonic/images/logo-crisp.png" height="64" /></a></td>
@@ -131,6 +138,10 @@
 </tr>
 </table>
 
+<table>
+  <td><center><a href="https://sourcerer.io/lengyue1024"><img src="./.vuepress/public/bingyu.jpg" width="100px" height="100px" alt="Contributor" /></a></center></td>
+  <td><center><a href="https://github.com/octocatHub/octocathub.github.io/graphs/contributors"><img src="https://ghchart.rshah.org/409ba5/lengyue1024" alt="bingyu's Github Chart" /></a></center></td>
+</table>
 
 <table>
 <tr>
