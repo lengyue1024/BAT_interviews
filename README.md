@@ -126,8 +126,8 @@
 <td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg" /></a></td>
 </tr>
 <tr>
-<td align="center">微信</td>
-<td align="center">支付宝</td>
+<td align="center"><strong>微信</strong></td>
+<td align="center"><strong>支付宝</strong></td>
 </tr>
 </table>
 
