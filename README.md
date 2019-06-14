@@ -105,20 +105,6 @@
   <td><center><a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://ghchart.rshah.org/409ba5/lengyue1024" alt="bingyu's Github Chart" /></a></center></td>
 </table>
 
-
-<table>
-<tr>
-<td align="center"><a href="https://crisp.chat/"><img src="https://valeriansaliou.github.io/sonic/images/logo-crisp.png" height="64" /></a></td>
-<td align="center"><a href="https://scrumpy.io/"><img src="https://valeriansaliou.github.io/sonic/images/logo-scrumpy.png" height="64" /></a></td>
-</tr>
-<tr>
-<td align="center">Crisp</td>
-<td align="center">Scrumpy</td>
-</tr>
-</table>
-
-
-<a href="https://github.com/lengyue1024/BAT_interviews/graphs/contributors"><img src="https://avatars0.githubusercontent.com/u/36565884?s=400&v=4" width="80px"></a>
 ### :pencil2:How to contribute | 贡献规范
 目前来讲，仍然有很多地方需要完善，希望有经验并心怀开源精神的同学前来帮我共同完善本项目,并且欢迎提交[PR](https://github.com/lengyue1024/BAT_interviews/pulls)和[issue](https://github.com/lengyue1024/BAT_interviews/issues/new)。
 
@@ -135,25 +121,6 @@
 <tr>
 <td align="center"><strong>微信</strong></td>
 <td align="center"><strong>支付宝</strong></td>
-</tr>
-</table>
-
-<table>
-  <td><center><a href="https://sourcerer.io/lengyue1024"><img src="./.vuepress/public/bingyu.jpg" width="100px" height="100px" alt="Contributor" /></a></center></td>
-  <td><center><a href="https://github.com/octocatHub/octocathub.github.io/graphs/contributors"><img src="https://ghchart.rshah.org/409ba5/lengyue1024" alt="bingyu's Github Chart" /></a></center></td>
-</table>
-
-<table>
-<tr>
-<td align="center">
-<img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg"><br><strong>微信</strong>
-</td>
-<td>
-<center>
-<img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg">
-<br><strong>支付宝</strong>
-</center>
-</td>
 </tr>
 </table>
 
