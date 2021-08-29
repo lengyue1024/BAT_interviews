@@ -231,6 +231,20 @@
   4)利用java.text.DataFormat 的子类（如SimpleDateFormat类）中的format(Date)方法可将日期格式化。
   ### 42 打印昨天的当前时刻。
   答：
+  ```java
+  // 1.8之前
+  Calendar calendar = Calendar.getInstance();
+  calendar.add(Calendar.DAY_OF_MONTH,-1);
+  Date yesterday2 = calendar.getTime();
+  System.out.println(yesterday2);
+  
+  // java1.8之后
+  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+  LocalDateTime now = LocalDateTime.now();
+  LocalDateTime yesterday = now.plusDays(-1);
+  System.out.println("今天："+now.format(formatter));
+  System.out.println("昨天："+yesterday.format(formatter));
+  ```
 
   ### 43 比较一下Java 和JavaSciprt。
   答：JavaScript 与Java是两个公司开发的不同的两个产品。Java 是原Sun 公司推出的面向对象的程序设计语言，特别适合于互联网应用程序开发；而JavaScript是Netscape公司的产品，为了扩展Netscape浏览器的功能而开发的一种可以嵌入Web页面中运行的基于对象和事件驱动的解释性语言，它的前身是LiveScript；而Java 的前身是Oak语言。
