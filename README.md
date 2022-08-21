@@ -14,12 +14,16 @@
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
-## :email:Contact | 联系我:  
+## :speech_balloon: | 声明
+
+> 该份面试题是我从我个人面试经历以及网上资料整理得到的，所以本文档中可能会存在各种不足和问题，所以欢迎各位不吝指教，积极提issue和mr.
+
+## :email:Contact | 联系我
 
 [![facebook](https://wangchujiang.com/sb/ico/facebook.svg)](https://www.facebook.com/ibingyu)
 [![qq](https://wangchujiang.com/sb/ico/qq.svg)](http://wpa.qq.com/msgrd?v=3&uin=3433951572&site=qq&menu=yes)
 [![qq-group](https://wangchujiang.com/sb/ico/group.svg)](https://jq.qq.com/?_wv=1027&k=5MttUBq)
-[![blog](https://wangchujiang.com/sb/ico/linux.svg)](https://www.bingyublog.com) [![email](https://wangchujiang.com/sb/ico/email.svg)](mailto:xzhxpx@qq.com)
+[![blog](https://wangchujiang.com/sb/ico/linux.svg)](https://blog.octocathub.com) [![email](https://wangchujiang.com/sb/ico/email.svg)](mailto:xzhxpx@qq.com)
 [![weibo](https://wangchujiang.com/sb/ico/weibo.svg)](https://weibo.com/u/6083310945)
 [![gitter](https://wangchujiang.com/sb/ico/gitter.svg)](https://gitter.im/bingyux/Lobby)
 
@@ -115,8 +119,8 @@
 
 <table>
 <tr>
-<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g04y26vkykj305k05kjt3.jpg" /></a></td>
-<td align="center"><img src="https://ws1.sinaimg.cn/large/006DGX4tly1g0oqmwuikzj305k05kmyo.jpg" /></a></td>
+<td align="center"><img src="./assets/wechat.jpg" /></a></td>
+<td align="center"><img src="./assets/alipay.jpg" /></a></td>
 </tr>
 <tr>
 <td align="center"><strong>微信</strong></td>
