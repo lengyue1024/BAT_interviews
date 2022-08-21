@@ -14,7 +14,7 @@
 
 >**:rocket:分享最新BAT面试题(包含机器学习,Linux,PHP,大数据,Python,Java,前端等),持续更新ing...**
 
-## :speech_balloon: | 声明
+## :speech_balloon:Announce | 声明
 
 > 该份面试题是我从我个人面试经历以及网上资料整理得到的，所以本文档中可能会存在各种不足和问题，所以欢迎各位不吝指教，积极提issue和mr.
 
